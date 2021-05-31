@@ -4,4 +4,4 @@
 
 > Monopoly in Minecraft
 
-Official Data- & resourcepack for Mineopoly
+Official Datapack for Mineopoly
