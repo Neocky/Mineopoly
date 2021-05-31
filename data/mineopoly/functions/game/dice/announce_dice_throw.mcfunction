@@ -2,6 +2,6 @@
 #
 # Annouce the value of the dice throw
 #
-# currently not used
+# @within mineopoly:game/dice/roll_dice
 
 tellraw @s ["",{"selector":"@e[type=player,tag=diceThrower]"},{"text":" threw a: ","color":"green"},{"score":{"name":"#diceFull","objective":"dice"},"color":"light_purple"}]
