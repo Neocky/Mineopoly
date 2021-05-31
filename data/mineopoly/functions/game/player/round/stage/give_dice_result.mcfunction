@@ -2,7 +2,7 @@
 #
 # Gives players dice heads in their inventory depending on their result
 #
-#
+# @within mineopoly:game/player/handle_turn
 
 # 1st dice result -> replace inventory slot with head
 
