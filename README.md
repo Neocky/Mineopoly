@@ -1,2 +1,2 @@
-# Mineopoly-Datapack
+# Mineopoly
 Datapack for Mineopoly
