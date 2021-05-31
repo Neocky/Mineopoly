@@ -4,4 +4,4 @@
 #
 # currently not used
 
-tellraw @a ["",{"selector":"@e[type=player,tag=diceThrower]"},{"text":" threw a: ","color":"green"},{"score":{"name":"#dice1_p","objective":"dice1"},"color":"light_purple"}]
+tellraw @s ["",{"selector":"@e[type=player,tag=diceThrower]"},{"text":" threw a: ","color":"green"},{"score":{"name":"#diceFull","objective":"dice"},"color":"light_purple"}]

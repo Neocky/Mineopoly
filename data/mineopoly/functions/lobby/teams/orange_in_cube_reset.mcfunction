@@ -4,7 +4,7 @@
 #
 # @block -9 68 -478
 
-tellraw @a ["",{"text":"Orange","bold":true,"color":"gold"},{"text":" is not occupied anymore!","color":"red"}]
+tellraw @a ["",{"text":"Orange ","bold":true,"color":"gold"},{"translate":"mineopoly.teams.not_occupied","color":"red"}]
 
 fill -9 64 -481 -11 65 -481 minecraft:air
 setblock -9 65 -479 minecraft:air

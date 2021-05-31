@@ -4,11 +4,15 @@
 #
 # @within mineopoly:lobby/setup/setup_games
 
-scoreboard objectives remove player_count
+scoreboard objectives remove playerHandler
 scoreboard objectives remove numbers
+scoreboard objectives remove turnOfPlayer
 
-scoreboard objectives add player_count dummy
+scoreboard objectives add playerHandler dummy
 scoreboard objectives add numbers dummy
+scoreboard objectives add turnOfPlayer dummy
 
-scoreboard players set #playerNumbers player_count 0
+scoreboard players set #playerNumbers playerHandler 0
+scoreboard players set #playersReady playerHandler 0
+scoreboard players set #activeGame playerHandler 0
 scoreboard players set #one numbers 1
