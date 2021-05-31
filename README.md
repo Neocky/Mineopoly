@@ -1,5 +1,5 @@
 # Mineopoly
 
-| Monopoly in Minecraft
+> Monopoly in Minecraft
 
 Official Data- & resourcepack for Mineopoly
