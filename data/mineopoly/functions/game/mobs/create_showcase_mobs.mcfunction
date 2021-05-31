@@ -1,6 +1,6 @@
 #> mineopoly:game/mobs/create_showcase_mobs
 #
-# Remove nearest player from tag team_pink and destroy shields and glass panes.
+# Summons display mobs as showcase
 #
 # @within mineopoly:lobby/setup/start_game
 
