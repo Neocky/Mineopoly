@@ -6,7 +6,6 @@
 
 scoreboard players operation @s field += #diceFull dice
 
-execute as @s run function mineopoly:game/player/pass_go
 
 # sets the players field score to 0 when they pass GO
 execute if score @s field matches 40.. run function mineopoly:game/player/pass_go
