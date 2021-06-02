@@ -16,3 +16,4 @@ scoreboard players set #playerNumbers playerHandler 0
 scoreboard players set #playersReady playerHandler 0
 scoreboard players set #activeGame playerHandler 0
 scoreboard players set #one numbers 1
+scoreboard players set #forty numbers 40
