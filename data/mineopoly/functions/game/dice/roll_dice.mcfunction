@@ -18,3 +18,7 @@ tag @s remove diceThrower
 # scoreboard players set #dice_2p dice 0
 # scoreboard players set #diceFull dice 0
 scoreboard objectives remove diceThrow
+
+# runs dice_to_field to set new field value for the player
+
+execute as @s run function mineopoly:game/scoreboard/dice_to_field
