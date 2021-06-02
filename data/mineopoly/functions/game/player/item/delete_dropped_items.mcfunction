@@ -4,6 +4,6 @@
 #
 #
 
-kill @e[nbt={Item:{tag:{noDrop:1b}}}]
+kill @e[type=minecraft:item, nbt={Item:{tag:{noDrop:1b}}}]
 
 
