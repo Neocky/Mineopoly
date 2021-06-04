@@ -2,12 +2,12 @@
 #
 # fills barriers inbetween fields depending on players' 'field' score
 #
-# 
+# @within mineopoly:tick
+
 
 # go field (facing south)
 execute positioned -22 64 -15 unless entity @e[type= minecraft:player, distance=..9, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier 
 execute positioned -22 64 -15 if entity @e[type=minecraft:player, distance=..9, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:air
-
 
 # Players facing south
 execute positioned -22 64 2 unless entity @e[type= minecraft:player, distance=..9, scores={field=2..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier 
@@ -39,13 +39,10 @@ execute positioned -22 64 138 if entity @e[type=minecraft:player, distance=..9, 
 
 
 # prison field (facing west)
-
 execute positioned -42 64 176 unless entity @e[type= minecraft:player, distance=..9, scores={field=11..}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:barrier 
 execute positioned -42 64 176 if entity @e[type=minecraft:player, distance=..9, scores={field=11..}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:air
 
-
 # Players facing west 
-
 execute positioned -59 64 176 unless entity @e[type= minecraft:player, distance=..9, scores={field=12}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:barrier 
 execute positioned -59 64 176 if entity @e[type=minecraft:player, distance=..9, scores={field=12}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:air
 
@@ -72,6 +69,7 @@ execute positioned -178 64 176 if entity @e[type=minecraft:player, distance=..9,
 
 execute positioned -195 64 176 unless entity @e[type= minecraft:player, distance=..9, scores={field=20}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:barrier 
 execute positioned -195 64 176 if entity @e[type=minecraft:player, distance=..9, scores={field=20}, limit=1] run fill ~-9 ~ ~3 ~-9 ~36 ~-3 minecraft:air
+
 
 # free parking field (facing north)
 execute positioned -233 64 156 unless entity @e[type= minecraft:player, distance=..9, scores={field=21..}, limit=1] run fill ~-3 ~ ~-9 ~3 ~36 ~-9 minecraft:barrier 
@@ -105,12 +103,12 @@ execute positioned -233 64 20 if entity @e[type=minecraft:player, distance=..9, 
 execute positioned -233 64 3 unless entity @e[type= minecraft:player, distance=..9, scores={field=30}, limit=1] run fill ~-3 ~ ~-9 ~3 ~36 ~-9 minecraft:barrier 
 execute positioned -233 64 3 if entity @e[type=minecraft:player, distance=..9, scores={field=30}, limit=1] run fill ~-3 ~ ~-9 ~3 ~36 ~-9 minecraft:air
 
+
 # go to jail field (facing east)
 execute positioned -213 64 -35 unless entity @e[type= minecraft:player, distance=..9, scores={field=31}, limit=1] run fill ~9 ~ ~-3 ~9 ~36 ~3 minecraft:barrier 
 execute positioned -213 64 -35 if entity @e[type=minecraft:player, distance=..9, scores={field=31}, limit=1] run fill ~9 ~ ~-3 ~9 ~36 ~3 minecraft:air
 
 # Players facing east
-
 execute positioned -196 64 -35 unless entity @e[type= minecraft:player, distance=..9, scores={field=32}, limit=1] run fill ~9 ~ ~-3 ~9 ~36 ~3 minecraft:barrier 
 execute positioned -196 64 -35 if entity @e[type=minecraft:player, distance=..9, scores={field=32}, limit=1] run fill ~9 ~ ~-3 ~9 ~36 ~3 minecraft:air
 
