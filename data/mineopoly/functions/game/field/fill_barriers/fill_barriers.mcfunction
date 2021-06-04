@@ -5,5 +5,5 @@
 # 
 
 # West
-execute positioned -26 64 36 unless entity @e[type= minecraft:player, distance=..8, scores={field=3}, limit=1] run fill ~8 ~ ~ ~-7 ~36 ~ minecraft:barrier 
-execute positioned -26 64 36 if entity @e[type=minecraft:player, distance=..8, scores={field=3}, limit=1] run fill ~8 ~ ~ ~-7 ~36 ~ minecraft:air
+execute positioned -26 64 36 unless entity @e[type= minecraft:player, distance=..8, scores={field=3}, limit=1] run fill ~ ~ ~8 ~ ~36 ~-7 minecraft:barrier 
+execute positioned -26 64 36 if entity @e[type=minecraft:player, distance=..8, scores={field=3}, limit=1] run fill ~ ~ ~8 ~ ~36 ~-7 minecraft:air
