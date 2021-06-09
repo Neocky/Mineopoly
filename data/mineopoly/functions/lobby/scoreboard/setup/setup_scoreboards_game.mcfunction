@@ -10,6 +10,7 @@ scoreboard objectives remove money
 scoreboard objectives remove dice
 scoreboard players reset @a field
 scoreboard objectives remove field
+scoreboard players reset #double_rolled playerHandler
 
 # game is active
 scoreboard players set #activeGame playerHandler 1
@@ -36,3 +37,6 @@ scoreboard players set #activePlayer playerHandler 1
 # field numbers for players
 scoreboard objectives add field dummy
 scoreboard players set @a[team=!] field 0
+
+# scoreboard that counts the double_rolls
+scoreboard players add #double_rolled playerHandler 0

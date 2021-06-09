@@ -13,7 +13,6 @@ scoreboard objectives remove endturn
 tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove loaded
 tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove yourTurn
 
-scoreboard players set #dice_1p dice 0
-scoreboard players set #dice_2p dice 0
-scoreboard players set #diceFull dice 0
+function mineopoly:lobby/scoreboard/math/reset_dice
 scoreboard objectives remove diceThrow
+scoreboard players set #double_rolled playerHandler 0

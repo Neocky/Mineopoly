@@ -14,11 +14,13 @@ execute as @a run function mineopoly:game/dice/announce_dice_throw
 
 # revert to default
 tag @s remove diceThrower
-# scoreboard players set #dice_1p dice 0
-# scoreboard players set #dice_2p dice 0
-# scoreboard players set #diceFull dice 0
 scoreboard objectives remove diceThrow
+
+
+
 
 # runs dice_to_field to set new field value for the player
 
 execute as @s run function mineopoly:game/scoreboard/math/dice_to_field
+
+execute if score #dice_1p dice = #dice_2p dice run function mineopoly:game/dice/double_rolled
