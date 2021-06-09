@@ -23,4 +23,5 @@ scoreboard objectives remove diceThrow
 
 execute as @s run function mineopoly:game/scoreboard/math/dice_to_field
 
+tellraw @a ["","Würfel 1: ",{"score":{"name":"#dice1_p","objective":"dice"}},"\n","Würfel 2: ",{"score":{"name":"#dice2_p","objective":"dice"}}]
 execute if score #dice_1p dice = #dice_2p dice run function mineopoly:game/dice/double_rolled
