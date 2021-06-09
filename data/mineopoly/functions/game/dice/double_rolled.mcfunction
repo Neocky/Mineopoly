@@ -4,6 +4,7 @@
 #
 # @within mineopoly:game/dice/roll_dice
 
+tellraw @a ["","Würfel 1: ",{"score":{"name":"#dice1_p","objective":"dice"}},"\n","Würfel 2: ",{"score":{"name":"#dice2_p","objective":"dice"}}]
 
 execute as @a run function mineopoly:game/dice/announce_dice_double
 function mineopoly:lobby/scoreboard/math/reset_dice
