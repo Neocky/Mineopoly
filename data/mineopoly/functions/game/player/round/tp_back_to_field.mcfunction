@@ -1,8 +1,8 @@
 #> mineopoly:game/player/round/tp_back_to_field
 #
-# fills barriers on fields unless players 'field' score is equal to the field
+# Tps players back to their field if they are to far away from it at the start of their turn
 #
-# @within mineopoly:tick
+# @within mineopoly:game/player/handle_turn
 
 # West
 execute positioned -34 64 -22 if entity @s[distance=16.., scores={field=0}] run tp @s -22 64 -12

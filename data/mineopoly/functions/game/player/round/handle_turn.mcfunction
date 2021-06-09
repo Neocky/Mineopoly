@@ -2,11 +2,13 @@
 #
 # Handles the turn of the player and the movementsystem
 #
-#test
+# @within mineopoly:tick
 
 # stage 1
 # vllt permanenter upfuck beim entfernen
 execute as @a if score @s[type=minecraft:player] turnOfPlayer = #activePlayer playerHandler run tag @s add yourTurn
+
+execute as @e[type=minecraft:player, tag=yourTurn, limit=1] run function mineopoly:game/player/round/tp_back_to_field
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #active_stage stage matches 1 run function mineopoly:game/player/round/stage/stage_1
 
 # stage 2
