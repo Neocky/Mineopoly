@@ -8,7 +8,8 @@
 # vllt permanenter upfuck beim entfernen
 execute as @a if score @s[type=minecraft:player] turnOfPlayer = #activePlayer playerHandler run tag @s add yourTurn
 
-execute as @e[type=minecraft:player, tag=yourTurn, limit=1] run function mineopoly:game/player/round/tp_back_to_field
+execute as @e[type=minecraft:player, tag=yourTurn, tag=!loaded, limit=1] run function mineopoly:game/player/round/stage/load_player_once
+
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #active_stage stage matches 1 run function mineopoly:game/player/round/stage/stage_1
 
 # stage 2
