@@ -2,7 +2,7 @@
 #
 # Outputs the street name as title
 #
-# @ block
+# @within mineopoly:lobby/streets/title_show_all
 
 title @s times 0 20 20
 title @s title {"translate":"mineopoly.streetname.pink_1","bold":true,"color":"#c64fbd"}

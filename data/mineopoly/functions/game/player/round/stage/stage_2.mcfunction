@@ -2,8 +2,6 @@
 #
 # Gives players an item which can be used to end their turn
 #
-#
+# @within mineopoly:game/player/handle_turn
 
-#tag @s add yourTurn
-
-
+# stage 2 comes here

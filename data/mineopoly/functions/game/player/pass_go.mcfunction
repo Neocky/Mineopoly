@@ -4,6 +4,6 @@
 #
 # @within mineopoly:lobby/setup/setup_games
 
-tellraw @a ["",{"selector":"@s"},{"text":" passed GO!","color":"green"}]
-tellraw @s {"text":"200M$ was added to your account!","color":"yellow"}
+tellraw @a ["",{"selector":"@s"},{"translate":" mineopoly.field.passed_go","color":"green"}]
+tellraw @s ["",{"text":"200 M$","color":"green"},{"text":" "},{"translate":"mineopoly.money.money_added","color":"gray"}]
 execute as @s run function mineopoly:game/scoreboard/math/pass_go_money

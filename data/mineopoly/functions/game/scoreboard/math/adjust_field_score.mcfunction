@@ -5,4 +5,3 @@
 # to tick function!
 
 execute positioned -48 64 -35 if score @p field matches 40.. if entity @p[distance=..3.2, limit=1] run scoreboard players remove @p field 40
-#

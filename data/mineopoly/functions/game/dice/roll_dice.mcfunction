@@ -2,33 +2,22 @@
 #
 # Annouce the value of the dice throw
 #
-# @within 
+# @within mineopoly:game/player/round/stage/stage_1
 
-
-
-execute store result score #dice1_p dice run loot spawn ~ ~ ~ loot mineopoly:rng
-execute store result score #dice2_p dice run loot spawn ~ ~ ~ loot mineopoly:rng
-
-
-
-tellraw @a ["","Würfel 1: ",{"score":{"name":"#dice1_p","objective":"dice"}},"\n","Würfel 2: ",{"score":{"name":"#dice2_p","objective":"dice"}}]
+execute store result score #dice1 dice run loot spawn ~ ~ ~ loot mineopoly:rng
+execute store result score #dice2 dice run loot spawn ~ ~ ~ loot mineopoly:rng
 
 function mineopoly:game/dice/add_dices
 
 execute as @a run function mineopoly:game/dice/announce_dice_throw
 
-
 # revert to default
 tag @s remove diceThrower
 scoreboard objectives remove diceThrow
 
-
-
-
 # runs dice_to_field to set new field value for the player
-
 execute as @s run function mineopoly:game/scoreboard/math/dice_to_field
 
-
-# scoreboard players operation #dice_2ptest playerHandler = #dice_2p dice
- execute if score #dice1_p dice = #dice2_p dice run function mineopoly:game/dice/double_rolled
+# if dice are doubles
+ execute if score #dice1 dice = #dice2 dice run function mineopoly:game/dice/doubles_rolled
+ 

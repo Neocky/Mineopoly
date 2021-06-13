@@ -15,4 +15,4 @@ tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove yourTurn
 
 function mineopoly:lobby/scoreboard/math/reset_dice
 scoreboard objectives remove diceThrow
-scoreboard players set #double_rolled playerHandler 0
+scoreboard players set #doublesRolled playerHandler 0

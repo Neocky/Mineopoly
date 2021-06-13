@@ -10,7 +10,9 @@ scoreboard objectives remove money
 scoreboard objectives remove dice
 scoreboard players reset @a field
 scoreboard objectives remove field
-scoreboard players reset #double_rolled playerHandler
+scoreboard players reset @a stageHandler
+scoreboard players reset #doublesRolled playerHandler
+scoreboard players reset @a prisonRound
 
 # game is active
 scoreboard players set #activeGame playerHandler 1
@@ -23,13 +25,13 @@ scoreboard objectives setdisplay sidebar money
 
 # Dice scoreboards
 scoreboard objectives add dice dummy
-scoreboard players set #dice_1p dice 0
-scoreboard players set #dice_2p dice 0
+scoreboard players set #dice1 dice 0
+scoreboard players set #dice2 dice 0
 scoreboard players set #diceFull dice 0
 
 # game handler scoreboards
-scoreboard objectives add stage dummy
-scoreboard players set #active_stage stage 1
+scoreboard objectives add stageHandler dummy
+scoreboard players set #activeStage stageHandler 1
 
 # player 1 starts with his turn
 scoreboard players set #activePlayer playerHandler 1
@@ -38,5 +40,8 @@ scoreboard players set #activePlayer playerHandler 1
 scoreboard objectives add field dummy
 scoreboard players set @a[team=!] field 0
 
-# scoreboard that counts the double_rolls
-scoreboard players add #double_rolled playerHandler 0
+# scoreboard that counts the dice doubles
+scoreboard players add #doublesRolled playerHandler 0
+
+# setup scoreboards to handle the prison
+scoreboard objectives add prisonRound dummy
