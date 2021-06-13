@@ -1,4 +1,4 @@
-#> mineopoly:game/player/round/movement/end_turn
+#> mineopoly:game/player/round/stage/end_turn
 #
 # Gives players an item which can be used to end their turn
 #

@@ -1,4 +1,4 @@
-#> mineopoly:game/dice/announce_dice_throw
+#> mineopoly:game/dice/add_dices
 #
 # Adds the dice values together
 #
