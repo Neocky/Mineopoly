@@ -6,8 +6,10 @@
 
 
 # go field (facing south)
-execute positioned -22 64 -15 unless entity @e[type= minecraft:player, distance=..9.78, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier
-execute positioned -22 64 -15 if entity @e[type=minecraft:player, distance=..9.78, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:air
+#execute positioned -22 64 -15 unless entity @e[type= minecraft:player, distance=..9.78, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier
+#execute positioned -22 64 -15 if entity @e[type=minecraft:player, distance=..9.78, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:air
+execute positioned -22 64 -15 unless entity @e[type= minecraft:player, x=-25 , y=64, z=-13, dx=6, dy=10, dz=6.9, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier
+execute positioned -22 64 -15 if entity @e[type=minecraft:player, x=-25 , y=64, z=-13, dx=6, dy=10, dz=6.9, scores={field=1..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:air
 
 # Players facing south
 execute positioned -22 64 2 unless entity @e[type= minecraft:player, distance=..9.78, scores={field=2..}, limit=1] run fill ~3 ~ ~9 ~-3 ~36 ~9 minecraft:barrier
