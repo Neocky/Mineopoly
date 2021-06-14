@@ -1,4 +1,4 @@
-#> mineopoly:lobby/scoreboard/math/detect_special_field
+#> mineopoly:game/field/detect_special_field
 #
 # adjusts players 'field' score and reduces it by 40 when they pass go
 #
