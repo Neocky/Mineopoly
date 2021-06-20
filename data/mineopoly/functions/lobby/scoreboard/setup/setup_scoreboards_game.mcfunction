@@ -39,9 +39,13 @@ scoreboard players set #activePlayer playerHandler 1
 # field numbers for players
 scoreboard objectives add field dummy
 scoreboard players set @a[team=!] field 0
+scoreboard objectives add currentField dummy
+scoreboard players set @a[team=!] currentField 0
 
 # scoreboard that counts the dice doubles
 scoreboard players add #doublesRolled playerHandler 0
 
 # setup scoreboards to handle the prison
 scoreboard objectives add prisonRound dummy
+
+

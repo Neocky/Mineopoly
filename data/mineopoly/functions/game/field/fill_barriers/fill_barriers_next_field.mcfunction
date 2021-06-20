@@ -1,4 +1,4 @@
-#> mineopoly:game/field/fill_barriers/fill_barriers_next_field
+    #> mineopoly:game/field/fill_barriers/fill_barriers_next_field
 #
 # fills barriers inbetween fields depending on players' 'field' score
 #

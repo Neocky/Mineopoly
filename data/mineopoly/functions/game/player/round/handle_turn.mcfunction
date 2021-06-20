@@ -15,4 +15,4 @@ execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #activeStag
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #activeStage stageHandler matches 2 run function mineopoly:game/player/round/stage/stage_2
 
 # give_dice_result if score active_stage matches 2 to 4
-execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #activeStage stageHandler matches 3..4 run function mineopoly:game/player/round/stage/give_dice_result
+execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score #activeStage stageHandler matches 2..4 run function mineopoly:game/player/round/stage/give_dice_result
