@@ -2,7 +2,7 @@
 #
 # Outputs the street name when the player is on the field
 #
-# 
+# @within mineopoly:game/field/detect_reached_field
 
 execute positioned -34 64 -23 as @s[distance=..16, scores={field=0}] run function mineopoly:game/field/title_street/title_go
 execute positioned -22 64 2 as @s[distance=..8, scores={field=1} ] run function mineopoly:game/field/title_street/title_brown_1

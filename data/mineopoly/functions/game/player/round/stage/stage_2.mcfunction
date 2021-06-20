@@ -8,7 +8,7 @@
 
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] run function mineopoly:game/field/detect_special_field
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] run function mineopoly:game/scoreboard/set_current_field
-execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score @s field = @s currentField run function mineopoly:game/field/detect_current_field
+execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score @s field = @s currentField run function mineopoly:game/field/detect_reached_field
 
 # Stage wird nur dann erhöht, wenn der Spieler auch auf dem Feld angekommen ist, wo er hin muss (das, was er gewürfelt hat)
 execute as @e[type=minecraft:player, tag=yourTurn, limit=1] if score @s field = @s currentField run scoreboard players operation #activeStage stageHandler += #one numbers
