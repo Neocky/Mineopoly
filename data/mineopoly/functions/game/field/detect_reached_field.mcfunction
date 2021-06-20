@@ -5,5 +5,5 @@
 # @within mineopoly:game/player/stage_2
 
 
-execute as @s if score @s field matches 30 run say @s Gehe zum Gefängnis! 
+execute as Neocky if score @s field matches 30 run say @s Gehe zum Gefängnis! 
 execute as @s run function mineopoly:game/field/title_street/title_show_all 
