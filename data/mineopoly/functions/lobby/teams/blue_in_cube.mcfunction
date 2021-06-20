@@ -12,3 +12,4 @@ setblock -5 69 -476 minecraft:warped_wall_sign[facing=north]
 data merge block -5 69 -476 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"execute as @p run function mineopoly:lobby/teams/blue_in_cube_ready"}}',Text2:'["",{"text":"[","bold":true,"color":"dark_gray"},{"text":"Ready","bold":true,"color":"green"},{"text":"]","bold":true,"color":"dark_gray"}]'}
 
 tag @s add team_blue
+execute positioned -4 68 -476 as @a[distance=..2.0, tag=!team_blue] run tp @s -1 64 -489
