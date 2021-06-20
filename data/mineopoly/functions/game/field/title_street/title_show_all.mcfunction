@@ -34,7 +34,7 @@ execute positioned -233 64 54 as @s[distance=..8, scores={field=26} ] run functi
 execute positioned -233 64 37 as @s[distance=..8, scores={field=27} ] run function mineopoly:game/field/title_street/title_yellow_2
 execute positioned -233 64 20 as @s[distance=..8, scores={field=28} ] run function mineopoly:game/field/title_street/title_water
 execute positioned -233 64 3 as @s[distance=..8, scores={field=29}] run function mineopoly:game/field/title_street/title_yellow_3
-execute positioned -220 64 22 as @s[distance=..16, scores={field=30} ] run function mineopoly:game/field/title_street/title_go_to_jail
+execute positioned -220 64 -22 as @s[distance=..16, scores={field=30} ] run function mineopoly:game/field/title_street/title_go_to_jail
 execute positioned -196 64 -35 as @s[distance=..8, scores={field=31} ] run function mineopoly:game/field/title_street/title_green_1
 execute positioned -179 64 -35 as @s[distance=..8, scores={field=32} ] run function mineopoly:game/field/title_street/title_green_2
 execute positioned -162 64 -35 as @s[distance=..8, scores={field=33} ] run function mineopoly:game/field/title_street/title_community_chest
