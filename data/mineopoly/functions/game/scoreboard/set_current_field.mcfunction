@@ -1,4 +1,4 @@
-#> mineopoly:lobby/scoreboard/set_current_field
+#> mineopoly:game/scoreboard/set_current_field
 #
 # Sets the current field scoreboard of player based on his position
 #
