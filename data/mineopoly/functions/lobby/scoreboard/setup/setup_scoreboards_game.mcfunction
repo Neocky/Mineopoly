@@ -23,6 +23,9 @@ scoreboard players set @a[team=!] money 1500
 scoreboard objectives modify money displayname [{"translate":"mineopoly.game.money","color":"#ffcf40","bold":true},{"text":" [","color":"dark_gray","bold":false},{"text":"M$","color":"green","bold":false},{"text":"]","color":"dark_gray","bold":false}]
 scoreboard objectives setdisplay sidebar money
 
+# show turn of player in tab list
+scoreboard objectives setdisplay list turnOfPlayer
+
 # Dice scoreboards
 scoreboard objectives add dice dummy
 scoreboard players set #dice1 dice 0

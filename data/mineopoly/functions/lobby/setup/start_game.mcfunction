@@ -30,6 +30,10 @@ function mineopoly:setup/setup_gamerules
 function mineopoly:game/mobs/create_showcase_mobs
 function mineopoly:game/mobs/create_prison_trader
 
+# creates the bossbar here
+function mineopoly:lobby/bossbar/create_bossbar
+bossbar set mineopoly:activeplayerbossbar players @a
+
 # give permanent effects
 execute as @a run function mineopoly:game/player/give_effects
 

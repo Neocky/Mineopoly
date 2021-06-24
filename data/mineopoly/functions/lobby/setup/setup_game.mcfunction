@@ -22,3 +22,6 @@ function mineopoly:lobby/setup/delete_signs_in_cubes
 
 # create a please wait screen which disappears after 5 seconds
 execute as @a run function mineopoly:lobby/setup/tp_to_spawn_on_reset
+
+# resets the bossbar
+function mineopoly:lobby/bossbar/reset_bossbar
