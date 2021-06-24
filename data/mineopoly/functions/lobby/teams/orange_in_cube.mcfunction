@@ -12,4 +12,4 @@ setblock -11 65 -479 minecraft:warped_wall_sign[facing=north]
 data merge block -11 65 -479 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"execute as @p run function mineopoly:lobby/teams/orange_in_cube_ready"}}',Text2:'["",{"text":"[","bold":true,"color":"dark_gray"},{"text":"Ready","bold":true,"color":"green"},{"text":"]","bold":true,"color":"dark_gray"}]'}
 
 tag @s add team_orange
-execute positioned -10 64 -479 as @e[type=minecraft:player, limit=1, distance=..2.0, tag=!team_orange] run tp @s -1 64 -489
+execute positioned -10 64 -479 as @e[type=minecraft:player, limit=1, distance=..2.8, tag=!team_orange] run tp @s -1 64 -489
