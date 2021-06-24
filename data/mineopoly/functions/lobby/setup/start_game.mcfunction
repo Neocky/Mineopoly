@@ -28,6 +28,7 @@ function mineopoly:setup/setup_gamerules
 
 # setup the board here
 function mineopoly:game/mobs/create_showcase_mobs
+function mineopoly:game/mobs/create_prison_trader
 
 # give permanent effects
 execute as @a run function mineopoly:game/player/give_effects
@@ -35,3 +36,4 @@ execute as @a run function mineopoly:game/player/give_effects
 # sets dice to 0
 scoreboard players set #dice1 dice 0
 scoreboard players set #dice2 dice 0
+
