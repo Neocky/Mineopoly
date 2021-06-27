@@ -1,8 +1,10 @@
 #> mineopoly:game/player/round/stage/stage_3
 #
-# Gives players an item which can be used to end their turn
+# Check if players need to pay money or skip this stage
 #
 # @within mineopoly:game/player/handle_turn
 
-# stage 2 comes here
+# if dice are doubles
+execute if score #dice1 dice = #dice2 dice run function mineopoly:game/dice/doubles_rolled
 
+execute unless score #dice1 dice = #dice2 dice run scoreboard players add #activeStage stageHandler 1

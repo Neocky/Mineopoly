@@ -5,7 +5,6 @@
 # @within mineopoly:game/dice/roll_dice
 
 execute as @a run function mineopoly:game/dice/announce_dice_doubles
-function mineopoly:lobby/scoreboard/math/reset_dice
 
 scoreboard players add #doublesRolled playerHandler 1
 

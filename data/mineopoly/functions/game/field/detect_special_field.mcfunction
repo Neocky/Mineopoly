@@ -5,4 +5,14 @@
 # @within mineopoly:game/player/stage_2
 
 
-execute positioned -48 64 -35 if score @e[type=minecraft:player, tag=yourTurn, sort=nearest, limit=1] field matches 40.. if entity @e[type=minecraft:player, tag=yourTurn, sort=nearest, distance=..3.2, limit=1] as @e[type=minecraft:player, tag=yourTurn, sort=nearest, limit=1] run function mineopoly:game/player/pass_go
+execute as @s if score @s field matches 30 run say @s Gehe zum Gefängnis! 
+# hier müsste die Go_to_prison function kommen
+
+# BITTE als Function schreiben mit nem tellraw etc., die ganzen functions dann in einen Ordner oder so
+execute as @s if score @s field matches 4 run scoreboard players remove @s money 200
+
+execute as @s run function mineopoly:game/field/title_street/title_show_all 
+
+# Alle speziellen Felder hinzufügen (Chance, Gemeinschaft, Steuer)
+
+

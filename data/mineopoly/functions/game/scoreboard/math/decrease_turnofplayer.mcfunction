@@ -1,4 +1,4 @@
-#> mineopoly:lobby/scoreboard/math/decrease_turnofplayer
+#> mineopoly:game/scoreboard/math/decrease_turnofplayer
 #
 # Sets the player turn score = the player ready score
 #
