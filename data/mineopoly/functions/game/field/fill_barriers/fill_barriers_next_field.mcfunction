@@ -105,8 +105,8 @@ execute positioned -205 50 10 unless entity @e[type= minecraft:player, x=-205 , 
 execute positioned -205 50 10 if entity @e[type= minecraft:player, x=-205 , y=50, z=10, dx=-31, dy=100, dz=-16, scores={field=30..}, limit=1] run fill -236 64 -6 -230 100 -6 minecraft:air
 
 # go to jail field (facing east)
-execute positioned -236 50 -7 unless entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=-32, dy=100, dz=-31, scores={field=31..}, limit=1] run fill -204 64 -38 -204 100 -32 minecraft:barrier
-execute positioned -236 50 -7 if entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=-32, dy=100, dz=-31, scores={field=31..}, limit=1] run fill -204 64 -38 -204 100 -32 minecraft:air
+execute positioned -236 50 -7 unless entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=32, dy=100, dz=-31, scores={field=31..}, limit=1] run fill -204 64 -38 -204 100 -32 minecraft:barrier
+execute positioned -236 50 -7 if entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=32, dy=100, dz=-31, scores={field=31..}, limit=1] run fill -204 64 -38 -204 100 -32 minecraft:air
 
 # 31
 execute positioned -203 50 -7 unless entity @e[type= minecraft:player, x=-203 , y=50, z=-7, dx=16, dy=100, dz=-31, scores={field=32..}, limit=1] run fill -187 64 -38 -187 100 -32 minecraft:barrier
