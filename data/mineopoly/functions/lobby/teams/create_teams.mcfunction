@@ -26,4 +26,4 @@ team add team_purple
 team modify team_purple color dark_purple
 
 team add team_red
-team modify team_red color red
+team modify team_red color dark_red
