@@ -5,4 +5,4 @@
 # @within mineopoly:game/player/stage_2
 
 
-execute positioned -48 64 -35 if score @e[type=minecraft:player, tag=yourTurn, sort=nearest, limit=1] field matches 40.. if entity @e[type=minecraft:player, tag=yourTurn, sort=nearest, distance=..3.2, limit=1] as @e[type=minecraft:player, tag=yourTurn, sort=nearest, limit=1] run function mineopoly:game/player/pass_go
+execute positioned -50 50 -38 if entity @e[type= minecraft:player, tag=yourTurn, x=-50 , y=50, z=-38, dx=31, dy=100, dz=32, scores={field=40..}, limit=1] as @e[type=minecraft:player, tag=yourTurn, sort=nearest, limit=1, scores={field=40..}] run function mineopoly:game/player/pass_go
