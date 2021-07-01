@@ -45,7 +45,7 @@ execute positioned -19 50 148 if entity @e[type= minecraft:player, x=-19 , y=50,
 
 # 11
 execute positioned -52 64 148 unless entity @e[type= minecraft:player, x=-52 , y=50, z=148, dx=-16, dy=100, dz=31, scores={field=12..}, limit=1] run fill -68 64 179 -68 100 173 minecraft:barrier
-execute positioned -52 64 148 if entity @e[type= minecraft:player, x=-52 , y=50, z=-148, dx=-16, dy=100, dz=31, scores={field=12..}, limit=1] run fill -68 64 179 -68 100 173 minecraft:air
+execute positioned -52 64 148 if entity @e[type= minecraft:player, x=-52 , y=50, z=148, dx=-16, dy=100, dz=31, scores={field=12..}, limit=1] run fill -68 64 179 -68 100 173 minecraft:air
 # 12
 execute positioned -69 64 148 unless entity @e[type= minecraft:player, x=-69 , y=50, z=148, dx=-16, dy=100, dz=31, scores={field=13..}, limit=1] run fill -85 64 179 -85 100 173 minecraft:barrier
 execute positioned -69 64 148 if entity @e[type= minecraft:player, x=-69 , y=50, z=148, dx=-16, dy=100, dz=31, scores={field=13..}, limit=1] run fill -85 64 179 -85 100 173 minecraft:air
