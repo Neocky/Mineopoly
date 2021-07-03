@@ -5,7 +5,7 @@
 # @within mineopoly:game/player/round/stage/load_player_once
 
 # go field (facing south)
-execute positioned -50 50 -38 unless entity @s[x=-50 , y=50, z=-38, dx=31, dy=100, dz=31.9, scores={field=0}] run tp @s -22 64 -12
+execute positioned -50 50 -38 unless entity @s[x=-50 , y=50, z=-38, dx=31, dy=100, dz=31.9,] if score @s field matches 0 run tp @s -22 64 -12
 #1
 execute positioned -50 50 -5 unless entity @s[x=-50 , y=50, z=-5, dx=31, dy=100, dz=15.9, scores={field=1}] run tp @s -22 64 2
 #2
