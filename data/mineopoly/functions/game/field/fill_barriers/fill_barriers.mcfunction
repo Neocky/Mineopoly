@@ -75,37 +75,37 @@ execute positioned -205 50 179 unless entity @e[type= minecraft:player, x=-205 ,
 execute positioned -205 50 179 if entity @e[type= minecraft:player, x=-205 , y=50, z=179, dx=-31, dy=100, dz=-31.9, scores={field=20}, limit=1] run fill -229 64 148 -229 100 171 minecraft:air
 
 # 21
-execute positioned -205 50 146 unless entity @e[type= minecraft:player, x=-205 , y=50, z=146, dx=-31, dy=100, dz=-15.9, scores={field=21}, limit=1] run fill -236 64 131 -230 100 146 minecraft:barrier
-execute positioned -205 50 146 if entity @e[type= minecraft:player, x=-205 , y=50, z=146, dx=-31, dy=100, dz=-15.9, scores={field=21}, limit=1] run fill -236 64 131 -230 100 146 minecraft:air
+execute positioned -205 50 146 unless entity @e[type= minecraft:player, x=-205 , y=50, z=146, dx=-31, dy=100, dz=-15.9, scores={field=21}, limit=1] run fill -229 64 131 -229 100 146 minecraft:barrier
+execute positioned -205 50 146 if entity @e[type= minecraft:player, x=-205 , y=50, z=146, dx=-31, dy=100, dz=-15.9, scores={field=21}, limit=1] run fill -229 64 131 -229 100 146 minecraft:air
 # 22
-execute positioned -205 50 129 unless entity @e[type= minecraft:player, x=-205 , y=50, z=129, dx=-31, dy=100, dz=-15.9, scores={field=22}, limit=1] run fill -236 64 114 -230 100 129 minecraft:barrier
-execute positioned -205 50 129 if entity @e[type= minecraft:player, x=-205 , y=50, z=129, dx=-31, dy=100, dz=-15.9, scores={field=22}, limit=1] run fill -236 64 114 -230 100 129 minecraft:air
+execute positioned -205 50 129 unless entity @e[type= minecraft:player, x=-205 , y=50, z=129, dx=-31, dy=100, dz=-15.9, scores={field=22}, limit=1] run fill -229 64 114 -229 100 129 minecraft:barrier
+execute positioned -205 50 129 if entity @e[type= minecraft:player, x=-205 , y=50, z=129, dx=-31, dy=100, dz=-15.9, scores={field=22}, limit=1] run fill -229 64 114 -229 100 129 minecraft:air
 # 23
-execute positioned -205 50 112 unless entity @e[type= minecraft:player, x=-205 , y=50, z=112, dx=-31, dy=100, dz=-15.9, scores={field=23}, limit=1] run fill -236 64 97 -230 100 112 minecraft:barrier
-execute positioned -205 50 112 if entity @e[type= minecraft:player, x=-205 , y=50, z=112, dx=-31, dy=100, dz=-15.9, scores={field=23}, limit=1] run fill -236 64 97 -230 100 112 minecraft:air
+execute positioned -205 50 112 unless entity @e[type= minecraft:player, x=-205 , y=50, z=112, dx=-31, dy=100, dz=-15.9, scores={field=23}, limit=1] run fill -229 64 97 -229 100 112 minecraft:barrier
+execute positioned -205 50 112 if entity @e[type= minecraft:player, x=-205 , y=50, z=112, dx=-31, dy=100, dz=-15.9, scores={field=23}, limit=1] run fill -229 64 97 -229 100 112 minecraft:air
 # 24
-execute positioned -205 50 95 unless entity @e[type= minecraft:player, x=-205 , y=50, z=95, dx=-31, dy=100, dz=-15.9, scores={field=24}, limit=1] run fill -236 64 80 -230 100 95 minecraft:barrier
-execute positioned -205 50 95 if entity @e[type= minecraft:player, x=-205 , y=50, z=95, dx=-31, dy=100, dz=-15.9, scores={field=24}, limit=1] run fill -236 64 80 -230 100 95 minecraft:air
+execute positioned -205 50 95 unless entity @e[type= minecraft:player, x=-205 , y=50, z=95, dx=-31, dy=100, dz=-15.9, scores={field=24}, limit=1] run fill -229 64 80 -229 100 95 minecraft:barrier
+execute positioned -205 50 95 if entity @e[type= minecraft:player, x=-205 , y=50, z=95, dx=-31, dy=100, dz=-15.9, scores={field=24}, limit=1] run fill -229 64 80 -229 100 95 minecraft:air
 # 25
-execute positioned -205 50 78 unless entity @e[type= minecraft:player, x=-205 , y=50, z=78, dx=-31, dy=100, dz=-15.9, scores={field=25}, limit=1] run fill -236 64 63 -230 100 78 minecraft:barrier
-execute positioned -205 50 78 if entity @e[type= minecraft:player, x=-205 , y=50, z=78, dx=-31, dy=100, dz=-15.9, scores={field=25}, limit=1] run fill -236 64 63 -230 100 78 minecraft:air
+execute positioned -205 50 78 unless entity @e[type= minecraft:player, x=-205 , y=50, z=78, dx=-31, dy=100, dz=-15.9, scores={field=25}, limit=1] run fill -229 64 63 -229 100 78 minecraft:barrier
+execute positioned -205 50 78 if entity @e[type= minecraft:player, x=-205 , y=50, z=78, dx=-31, dy=100, dz=-15.9, scores={field=25}, limit=1] run fill -229 64 63 -229 100 78 minecraft:air
 # 26
-execute positioned -205 50 61 unless entity @e[type= minecraft:player, x=-205 , y=50, z=61, dx=-31, dy=100, dz=-15.9, scores={field=26}, limit=1] run fill -236 64 46 -230 100 61 minecraft:barrier
-execute positioned -205 50 61 if entity @e[type= minecraft:player, x=-205 , y=50, z=61, dx=-31, dy=100, dz=-15.9, scores={field=26}, limit=1] run fill -236 64 46 -230 100 61 minecraft:air
+execute positioned -205 50 61 unless entity @e[type= minecraft:player, x=-205 , y=50, z=61, dx=-31, dy=100, dz=-15.9, scores={field=26}, limit=1] run fill -229 64 46 -229 100 61 minecraft:barrier
+execute positioned -205 50 61 if entity @e[type= minecraft:player, x=-205 , y=50, z=61, dx=-31, dy=100, dz=-15.9, scores={field=26}, limit=1] run fill -229 64 46 -229 100 61 minecraft:air
 # 27
-execute positioned -205 50 44 unless entity @e[type= minecraft:player, x=-205 , y=50, z=44, dx=-31, dy=100, dz=-15.9, scores={field=27}, limit=1] run fill -236 64 29 -230 100 44 minecraft:barrier
-execute positioned -205 50 44 if entity @e[type= minecraft:player, x=-205 , y=50, z=44, dx=-31, dy=100, dz=-15.9, scores={field=27}, limit=1] run fill -236 64 29 -230 100 44 minecraft:air
+execute positioned -205 50 44 unless entity @e[type= minecraft:player, x=-205 , y=50, z=44, dx=-31, dy=100, dz=-15.9, scores={field=27}, limit=1] run fill -229 64 29 -229 100 44 minecraft:barrier
+execute positioned -205 50 44 if entity @e[type= minecraft:player, x=-205 , y=50, z=44, dx=-31, dy=100, dz=-15.9, scores={field=27}, limit=1] run fill -229 64 29 -229 100 44 minecraft:air
 # 28
-execute positioned -205 50 27 unless entity @e[type= minecraft:player, x=-205 , y=50, z=27, dx=-31, dy=100, dz=-15.9, scores={field=28}, limit=1] run fill -236 64 12 -230 100 27 minecraft:barrier
-execute positioned -205 50 27 if entity @e[type= minecraft:player, x=-205 , y=50, z=27, dx=-31, dy=100, dz=-15.9, scores={field=28}, limit=1] run fill -236 64 12 -230 100 27 minecraft:air
+execute positioned -205 50 27 unless entity @e[type= minecraft:player, x=-205 , y=50, z=27, dx=-31, dy=100, dz=-15.9, scores={field=28}, limit=1] run fill -229 64 12 -229 100 27 minecraft:barrier
+execute positioned -205 50 27 if entity @e[type= minecraft:player, x=-205 , y=50, z=27, dx=-31, dy=100, dz=-15.9, scores={field=28}, limit=1] run fill -229 64 12 -229 100 27 minecraft:air
 # 29
-execute positioned -205 50 10 unless entity @e[type= minecraft:player, x=-205 , y=50, z=10, dx=-31, dy=100, dz=-15.9, scores={field=29}, limit=1] run fill -236 64 -5 -230 100 10 minecraft:barrier
-execute positioned -205 50 10 if entity @e[type= minecraft:player, x=-205 , y=50, z=10, dx=-31, dy=100, dz=-15.9, scores={field=29}, limit=1] run fill -236 64 -5 -230 100 10 minecraft:air
+execute positioned -205 50 10 unless entity @e[type= minecraft:player, x=-205 , y=50, z=10, dx=-31, dy=100, dz=-15.9, scores={field=29}, limit=1] run fill -229 64 -5 -229 100 10 minecraft:barrier
+execute positioned -205 50 10 if entity @e[type= minecraft:player, x=-205 , y=50, z=10, dx=-31, dy=100, dz=-15.9, scores={field=29}, limit=1] run fill -229 64 -5 -229 100 10 minecraft:air
 
 # go to jail field (facing east)
 # not needed because you go to jail anyway.
-# execute positioned -236 50 -7 unless entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=31.9, dy=100, dz=-31, scores={field=30}, limit=1] run fill -204 64 -31 -204 100 -31 minecraft:barrier
-# execute positioned -236 50 -7 if entity @e[type= minecraft:player, x=-236 , y=50, z=-7, dx=31.9, dy=100, dz=-31, scores={field=30}, limit=1] run fill -204 64 -31 -204 100 -31 minecraft:air
+# execute positioned -229 50 -7 unless entity @e[type= minecraft:player, x=-229 , y=50, z=-7, dx=31.9, dy=100, dz=-31, scores={field=30}, limit=1] run fill -204 64 -31 -204 100 -31 minecraft:barrier
+# execute positioned -229 50 -7 if entity @e[type= minecraft:player, x=-229 , y=50, z=-7, dx=31.9, dy=100, dz=-31, scores={field=30}, limit=1] run fill -204 64 -31 -204 100 -31 minecraft:air
 
 # 31
 execute positioned -203 50 -7 unless entity @e[type= minecraft:player, x=-203 , y=50, z=-7, dx=15.9, dy=100, dz=-31, scores={field=31}, limit=1] run fill -188 64 -31 -203 100 -31 minecraft:barrier
