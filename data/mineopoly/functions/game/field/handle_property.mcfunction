@@ -4,7 +4,7 @@
 #
 # @within mineopoly:game/player/stage_2
 
-execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 0 run say "Noch nicht gekauft"
+execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 0 run scoreboard players set #price price 60
 execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 1 run say "Hypothek"
 execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 2 run say "Alleinige Miete"
 execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 3 run say "Doppelte Miete"
@@ -15,7 +15,7 @@ execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 7
 execute if entity @s[scores={field=1}] if score #brown_1 fieldProperty matches 8 run say "Hotel"
 
 
-execute if entity @s[scores={field=3}] if score #brown_2 fieldProperty matches 0 run say "Noch nicht gekauft"
+execute if entity @s[scores={field=3}] if score #brown_2 fieldProperty matches 0 run scoreboard players set #price price 100
 execute if entity @s[scores={field=3}] if score #brown_2 fieldProperty matches 1 run say "Hypothek"
 execute if entity @s[scores={field=3}] if score #brown_2 fieldProperty matches 2 run say "Alleinige Miete"
 execute if entity @s[scores={field=3}] if score #brown_2 fieldProperty matches 3 run say "Doppelte Miete"
