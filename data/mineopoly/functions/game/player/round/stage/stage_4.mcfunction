@@ -9,7 +9,7 @@ scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
 replaceitem entity @s hotbar.7 minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
 
-execute as @s run function mineopoly:game/field/handle_property
+execute as @s run function mineopoly:game/field/get_property_price
 
 
 execute as @s if score @s endTurn matches 1.. run function mineopoly:game/player/round/stage/end_turn
