@@ -4,6 +4,10 @@
 #
 # @within mineopoly:lobby/setup/setup_games
 
+# create scoreboards for all fields
+scoreboard objectives add fieldProperty dummy
+function mineopoly:lobby/scoreboard/setup/setup_scoreboards_game_fields
+
 # reset everything incase something broke
 scoreboard players reset @a money
 scoreboard objectives remove money
