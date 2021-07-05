@@ -17,6 +17,7 @@ scoreboard objectives remove field
 scoreboard players reset @a stageHandler
 scoreboard players reset #doublesRolled playerHandler
 scoreboard players reset @a prisonRound
+scoreboard objectives remove price
 
 # game is active
 scoreboard players set #activeGame playerHandler 1
@@ -59,4 +60,6 @@ scoreboard players add #doublesRolled playerHandler 0
 # setup scoreboards to handle the prison
 scoreboard objectives add prisonRound dummy
 
-
+# create price scoreboard
+scoreboard objectives add price dummy
+scoreboard players set #price price 0
