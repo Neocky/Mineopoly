@@ -1,0 +1,42 @@
+{
+    "display": {
+		"icon": {
+            "item": "minecraft:gold_nugget"
+        },
+        "title": {
+            "translate": "mineopoly.advancement.money_over_2500.title"
+        },
+        "description": {
+            "translate": "mineopoly.advancement.money_over_2500.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	"parent": "mineopoly:mineopoly/root",
+    "criteria": {
+		"money_over_2500": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"money": {
+										"min": 2500,
+										"max": 1000000
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

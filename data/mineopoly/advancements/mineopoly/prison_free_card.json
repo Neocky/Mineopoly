@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:paper"
+		},
+		"title": {
+			"translate": "mineopoly.advancement.prison_free_card.title"
+		},
+        "description": {
+            "translate": "mineopoly.advancement.prison_free_card.description"
+        },
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "mineopoly:mineopoly/prison_go_to",
+	"_comment": "Granted through function mineopoly:game/",
+	"criteria": {
+		"bought_animal": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

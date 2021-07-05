@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_pickaxe"
+		},
+		"title": {
+			"translate": "mineopoly.advancement.obtain_netherite_pickaxe.title"
+		},
+        "description": {
+            "translate": "mineopoly.advancement.obtain_netherite_pickaxe.description"
+        },
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "mineopoly:mineopoly/stone_obtain_32",
+	"criteria": {
+		"obtain_netherite_pickaxe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_pickaxe"
+						],
+						"count": 1,
+						"enchantments": [
+							{
+								"enchantment": "minecraft:silk_touch",
+								"levels": 1
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

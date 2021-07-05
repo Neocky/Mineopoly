@@ -6,6 +6,8 @@
 
 tellraw @a ["",{"selector":"@s","bold":true},{"text":" finished the parkour!","color":"gold"}]
 
+execute if entity @s[advancements={mineopoly:mineopoly/lobby_finish_parcour=false}] as @s[advancements={mineopoly:mineopoly/lobby_finish_parcour=false}] run function mineopoly:lobby/advancements/grant_lobby_finish_parcour
+
 summon minecraft:firework_rocket -1 64 -489 {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;3887386,2651799,14602026,12801229,15435844],FadeColors:[I;11743532,3887386,2651799,14188952]}]}}}}
 summon minecraft:firework_rocket -1 64 -489 {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;3887386,2651799,14602026,12801229,15435844],FadeColors:[I;11743532,3887386,2651799,14188952]}]}}}}
 summon minecraft:firework_rocket -1 64 -489 {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;3887386,2651799,14602026,12801229,15435844],FadeColors:[I;11743532,3887386,2651799,14188952]}]}}}}

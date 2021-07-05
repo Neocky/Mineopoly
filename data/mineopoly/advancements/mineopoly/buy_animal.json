@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:saddle"
+		},
+		"title": {
+			"translate": "mineopoly.advancement.buy_animal.title"
+		},
+        "description": {
+            "translate": "mineopoly.advancement.buy_animal.description"
+        },
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "mineopoly:mineopoly/obtain_emerald",
+	"_comment": "Granted through function mineopoly:game/",
+	"criteria": {
+		"bought_animal": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

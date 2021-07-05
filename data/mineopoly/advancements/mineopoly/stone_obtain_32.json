@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": {
+			"translate": "mineopoly.advancement.stone_obtain_32.title"
+		},
+        "description": {
+            "translate": "mineopoly.advancement.stone_obtain_32.description"
+        },
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "mineopoly:mineopoly/prison_go_to",
+	"criteria": {
+		"obtain_stone_32": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:stone"
+						],
+						"count": 32
+					}
+				]
+			}
+		}
+	}
+}
