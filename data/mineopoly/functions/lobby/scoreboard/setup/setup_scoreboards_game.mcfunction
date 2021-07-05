@@ -45,6 +45,10 @@ scoreboard players set @a[team=!] field 0
 scoreboard objectives add currentField dummy
 scoreboard players set @a[team=!] currentField 0
 
+# used to open barriers on fields
+scoreboard objectives add fieldOpen dummy
+scoreboard players set @a[team=!] fieldOpen 0
+
 # scoreboard that counts the dice doubles
 scoreboard players add #doublesRolled playerHandler 0
 

@@ -1,4 +1,4 @@
-#> mineopoly:game/field/detect_special_field
+#> mineopoly:game/field/player_reached_field
 #
 # adjusts players 'field' score and reduces it by 40 when they pass go
 #
@@ -11,8 +11,9 @@ execute as @s if score @s field matches 30 run say @s Gehe zum Gefängnis!
 # BITTE als Function schreiben mit nem tellraw etc., die ganzen functions dann in einen Ordner oder so
 execute as @s if score @s field matches 4 run scoreboard players remove @s money 200
 
-execute as @s run function mineopoly:game/field/title_street/title_show_all 
+execute as @s run function mineopoly:game/field/title_street/title_show_all
 
+execute as @s run function mineopoly:game/scoreboard/set_field_open
 # Alle speziellen Felder hinzufügen (Chance, Gemeinschaft, Steuer)
 
 
