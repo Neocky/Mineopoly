@@ -18,8 +18,8 @@ scoreboard players reset @a stageHandler
 scoreboard players reset #doublesRolled playerHandler
 scoreboard players reset @a prisonRound
 scoreboard objectives remove price
-scoreboard objectives remove open_chest
-scoreboard objectives remove chest_menu
+scoreboard objectives remove openChest
+scoreboard objectives remove chestMenu
 
 # game is active
 scoreboard players set #activeGame playerHandler 1
@@ -67,5 +67,6 @@ scoreboard objectives add price dummy
 scoreboard players set #price price 0
 
 # setup scoreboard for chest gui
-scoreboard objectives add open_chest minecraft.custom:minecraft.open_chest
-scoreboard objectives add chest_menu dummy
+scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
+scoreboard objectives add chestMenu dummy
+scoreboard players set @a chestMenu 0

@@ -1,4 +1,4 @@
-#> mineopoly:lobby/streets/title_go
+#> mineopoly:game/field/title_street/title_go
 #
 # Outputs the street name
 #
