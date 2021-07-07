@@ -11,5 +11,7 @@ replaceitem entity @s hotbar.7 minecraft:carrot_on_a_stick{display:{Name:'[{"tra
 
 execute as @s run function mineopoly:game/field/get_property_price
 
+function mineopoly:game/field/chest_gui/main_gui
+
 
 execute as @s if score @s endTurn matches 1.. run function mineopoly:game/player/round/stage/end_turn
