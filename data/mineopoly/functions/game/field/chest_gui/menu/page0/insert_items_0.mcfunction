@@ -1,12 +1,12 @@
-#> mineopoly:game/field/chest_gui/menu/page0/insert_items_1
+#> mineopoly:game/field/chest_gui/menu/page0/insert_items_0
 #
 # Insert Items into chest for field 1
 #
 # @within mineopoly:game/field/chest_gui/menu/get_directory
 
 # Slot 1
-execute if entity @s[tag=property_brown_1] run data modify block -19 64 -20 Items insert 0 value {Slot:0b,id:"minecraft:player_head",Count:1b,tag:{isMenu:1b,page:0,selection:1,Enchantments:[{}],HideFlags:1,display:{Name:'[{"translate":"mineopoly.streetname.brown_1","italic":false,"bold":true,"color":"#825432"}]',Lore:['[{"translate":"mineopoly.game.property.teleport","italic":false,"color":"gray"}]'], SkullOwner:{Id:[I;-989558237,-103134512,-1878622495,-1559169507],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg4OTkyMWRmYjNkOTNiMTBhY2M3OWRmYmVmZWQ0NjNjNzI5ZTYyYjFmNzZhM2RjY2UxYjZjNDQwMTJiIn19fQ=="}]}}}}}
-execute unless entity @s[tag=property_brown_1] run data modify block -19 64 -20 Items insert 0 value {Slot:0b,id:"minecraft:player_head",Count:1b,tag:{isMenu:1b,page:0,selection:1,display:{Name:'[{"translate":"mineopoly.streetname.brown_1","italic":false,"bold":true,"color":"#825432"}]',Lore:['[{"translate":"mineopoly.game.property.teleport","italic":false,"color":"gray"}]'],SkullOwner:{Id:[I;-989558237,-103134512,-1878622495,-1559169507],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg4OTkyMWRmYjNkOTNiMTBhY2M3OWRmYmVmZWQ0NjNjNzI5ZTYyYjFmNzZhM2RjY2UxYjZjNDQwMTJiIn19fQ=="}]}}}}}
+execute if entity @s[tag=property_brown_1] run data modify block -19 64 -20 Items insert 0 value {Slot:0b,id:"minecraft:player_head",Count:1b,tag:{isMenu:1b,page:0,selection:1,Enchantments:[{}],HideFlags:1,display:{Name:'[{"translate":"mineopoly.streetname.brown_1","italic":false,"bold":true,"color":"#825432"}]',Lore:['[{"translate":"mineopoly.game.property.teleport","italic":false,"color":"gray"}]']},SkullOwner:{Id:[I;-989558237,-103134512,-1878622495,-1559169507],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg4OTkyMWRmYjNkOTNiMTBhY2M3OWRmYmVmZWQ0NjNjNzI5ZTYyYjFmNzZhM2RjY2UxYjZjNDQwMTJiIn19fQ=="}]}}}}
+execute unless entity @s[tag=property_brown_1] run data modify block -19 64 -20 Items insert 0 value {Slot:0b,id:"minecraft:player_head",Count:1b,tag:{isMenu:1b,page:0,selection:1,display:{Name:'[{"translate":"mineopoly.streetname.brown_1","italic":false,"bold":true,"color":"#825432"}]',Lore:['[{"translate":"mineopoly.game.property.teleport","italic":false,"color":"gray"}]']},SkullOwner:{Id:[I;-989558237,-103134512,-1878622495,-1559169507],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg4OTkyMWRmYjNkOTNiMTBhY2M3OWRmYmVmZWQ0NjNjNzI5ZTYyYjFmNzZhM2RjY2UxYjZjNDQwMTJiIn19fQ=="}]}}}}
 
 
 # Slot 2

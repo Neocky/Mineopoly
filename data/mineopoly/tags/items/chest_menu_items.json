@@ -1,12 +1,5 @@
 {
   "values":[
-	"minecraft:diamond_sword",
-	"minecraft:stone_sword",
-	"minecraft:bow",
-	"minecraft:red_wool",
-	"minecraft:cooked_chicken",
-	"minecraft:feather",
-	"minecraft:stone",
-	"minecraft:brown_concrete"
+	"minecraft:player_head"
   ]
 }
