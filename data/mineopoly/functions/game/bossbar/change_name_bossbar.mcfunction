@@ -4,4 +4,4 @@
 #
 # @within mineopoly:game/player/round/stage/load_player_once
 
-bossbar set mineopoly:activeplayerbossbar name ["",{"translate":"mineopoly.bossbar.active_player","color":"white"}," ",{"selector":"@a[tag=yourTurn]","bold":true}]
+bossbar set mineopoly:activeplayerbossbar name ["",{"translate":"mineopoly.bossbar.active_player","color":"white","bold":true}," ",{"selector":"@a[tag=yourTurn]"}]
