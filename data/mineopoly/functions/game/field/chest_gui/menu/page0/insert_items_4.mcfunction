@@ -1,6 +1,6 @@
 #> mineopoly:game/field/chest_gui/menu/page0/insert_items_4
 #
-# Insert Items into chest for field 1
+# Insert Items into chest for field 4
 #
 # @within mineopoly:game/field/chest_gui/menu/get_directory
 

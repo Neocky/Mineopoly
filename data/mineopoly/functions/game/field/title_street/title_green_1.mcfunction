@@ -1,8 +1,8 @@
-#> mineopoly:lobby/streets/title_green_1
+#> mineopoly:game/field/title_street/title_green_1
 #
 # Outputs the street name as title
 #
-# @within mineopoly:lobby/streets/title_show_all
+# @within mineopoly:game/field/title_street/title_show_all
 
 title @s times 0 20 20
 title @s title {"translate":"mineopoly.streetname.green_1","bold":true,"color":"#80c71f"}

@@ -13,6 +13,8 @@ execute as @s run function mineopoly:game/player/item/reset_items
 tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove loaded
 tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove yourTurn
 
+function mineopoly:game/field/chest_gui/remove_chests
+
 function mineopoly:lobby/scoreboard/math/reset_dice
 scoreboard objectives remove diceThrow
 scoreboard players set #doublesRolled playerHandler 0
