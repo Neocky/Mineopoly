@@ -1,0 +1,68 @@
+[
+	{
+		"function": "minecraft:set_lore",
+		"entity": "this",
+		"replace": true,
+		"lore": [
+			{
+				"translate": "mineopoly.game.property.owner",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					},
+					{
+						"selector": "@a[tag=property_green_1]",
+						"italic": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_lore",
+		"entity": "this",
+		"replace": true,
+		"lore": [
+			{
+				"translate": "mineopoly.game.property.owner",
+				"color": "gray",
+				"italic": false,
+				"extra": [
+					{
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					},
+					{
+						"selector": "@a[tag=property_green_1]",
+						"italic": false
+					}
+				]
+			},
+			{
+				"translate": "mineopoly.game.property.teleport",
+				"color": "gray",
+				"italic": false
+			},
+			{
+				"translate": "mineopoly.game.property.owned_self",
+				"color": "green",
+				"italic": false
+			}
+		],
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[property_green_1]}"
+				}
+			}
+		]
+	}
+]

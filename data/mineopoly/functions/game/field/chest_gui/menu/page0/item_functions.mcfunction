@@ -30,3 +30,4 @@ execute if score #selection chestMenu matches 20 run say Function 20
 execute if score #selection chestMenu matches 21 run say Function 21
 execute if score #selection chestMenu matches 23 run say Function 23
 execute if score #selection chestMenu matches 24 run say Function 24
+execute if score #selection chestMenu matches 26 run say Function 26

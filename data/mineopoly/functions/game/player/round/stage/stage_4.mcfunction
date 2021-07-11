@@ -4,10 +4,14 @@
 #
 # @within mineopoly:game/player/handle_turn
 
+
+execute as @s run function mineopoly:game/scoreboard/set_current_field
+
+execute as @s run function mineopoly:game/field/chest_gui/set_chests
+
 scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
 
-replaceitem entity @s hotbar.7 minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
-
+item replace entity @s hotbar.7 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
 execute as @s run function mineopoly:game/field/get_property_price
 
