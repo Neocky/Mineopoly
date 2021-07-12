@@ -18,3 +18,5 @@ execute if score #activeGame playerHandler matches 1 run function mineopoly:game
 
 # handles the turn if game is active
 execute if score #activeGame playerHandler matches 1 run function mineopoly:game/player/round/handle_turn
+
+execute if score #activeGame playerHandler matches 1 as @a run function mineopoly:game/player/give_permanent_items

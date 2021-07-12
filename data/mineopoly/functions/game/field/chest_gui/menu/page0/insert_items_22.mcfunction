@@ -13,7 +13,7 @@ item replace block -236 64 122 container.1 with minecraft:player_head{isMenu:1b,
 item modify block -236 64 122 container.1 mineopoly:chest_gui/slot_1_lore
 
 # Slot 2
-item replace block -236 64 122 container.2 with minecraft:air
+item replace block -236 64 122 container.2 with minecraft:light_gray_stained_glass_pane{isMenu:1b,page:0,selection:3,display:{Name:'[{"text":" ","italic":false}]'}}
 
 # Slot 3
 item replace block -236 64 122 container.3 with minecraft:player_head{isMenu:1b,page:0,selection:4,display:{Name:'[{"translate":"mineopoly.streetname.light_blue_1","italic":false,"bold":true,"color":"#3ab3da"}]'},SkullOwner:{Id:[I;-930086620,920471360,-2071976617,1341814217],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWViZDg1YjdmOWU2MjIyYjM5NTQ1MWFkYjQ2Yjc2YTYyZjdlOTVkYTZmYmY3ZWZlNzE1Yzc4MzQ1NTE0MCJ9fX0="}]}}}
@@ -88,7 +88,7 @@ item replace block -236 64 122 container.20 with minecraft:player_head{isMenu:1b
 item modify block -236 64 122 container.20 mineopoly:chest_gui/slot_20_lore
 
 # Slot 21
-item replace block -236 64 122 container.21 with minecraft:air
+item replace block -236 64 122 container.21 with minecraft:light_gray_stained_glass_pane{isMenu:1b,page:0,selection:3,display:{Name:'[{"text":" ","italic":false}]'}}
 
 # Slot 22
 item replace block -236 64 122 container.22 with minecraft:player_head{isMenu:1b,page:0,selection:23,display:{Name:'[{"translate":"mineopoly.streetname.dark_blue_1","italic":false,"bold":true,"color":"#3c44a9"}]'},SkullOwner:{Id:[I;1077844612,-1628878662,-2057413813,186755118],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQyMWIwYmFmYjg5NzIxY2FjNDk0ZmYyZWY1MmE1NGExODMzOTg1OGU0ZGNhOTlhNDEzYzQyZDlmODhlMGY2In19fQ=="}]}}}
@@ -99,10 +99,10 @@ item replace block -236 64 122 container.23 with minecraft:player_head{isMenu:1b
 item modify block -236 64 122 container.23 mineopoly:chest_gui/slot_23_lore
 
 # Slot 24
-item replace block -236 64 122 container.24 with minecraft:air
+item replace block -236 64 122 container.24 with minecraft:light_gray_stained_glass_pane{isMenu:1b,page:0,selection:3,display:{Name:'[{"text":" ","italic":false}]'}}
 
 # Slot 25
-item replace block -236 64 122 container.25 with minecraft:air
+item replace block -236 64 122 container.25 with minecraft:light_gray_stained_glass_pane{isMenu:1b,page:0,selection:3,display:{Name:'[{"text":" ","italic":false}]'}}
 
 # Slot 26
 item replace block -236 64 122 container.26 with minecraft:player_head{isMenu:1b,page:0,selection:26,display:{Name:'[{"translate":"mineopoly.game.property.actual_field","italic":false,"bold":true,"color":"red"}]'},SkullOwner:{Id:[I;1725013901,-1319550924,-1685700747,-1241102807],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY0Zjc3OWE4ZTNmZmEyMzExNDNmYTY5Yjk2YjE0ZWUzNWMxNmQ2NjllMTljNzVmZDFhN2RhNGJmMzA2YyJ9fX0="}]}}}

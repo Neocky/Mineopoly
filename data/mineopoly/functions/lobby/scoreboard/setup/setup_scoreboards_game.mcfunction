@@ -20,6 +20,7 @@ scoreboard players reset @a prisonRound
 scoreboard objectives remove price
 scoreboard objectives remove openChest
 scoreboard objectives remove chestMenu
+scoreboard objectives remove fieldHandler
 
 # game is active
 scoreboard players set #activeGame playerHandler 1
@@ -70,3 +71,7 @@ scoreboard players set #price price 0
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add chestMenu dummy
 scoreboard players set @a chestMenu 0
+
+# Used for head_menu for example
+scoreboard objectives add fieldHandler dummy
+scoreboard players set #fieldMenu fieldHandler 0

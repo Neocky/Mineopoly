@@ -1,0 +1,21 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"score": {
+				"name": "@s",
+				"objective": "money"
+			},
+			"color": "gold",
+			"italic": false,
+			"extra": [
+				{
+					"text": " M$",
+					"color": "green",
+					"italic": false
+				}
+			]
+		}
+	}
+]
