@@ -13,8 +13,6 @@ scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
 
 item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
-execute as @s run function mineopoly:game/field/property/get_property_price
-
 function mineopoly:game/field/chest_gui/main_gui
 
 # rotate armorstands slowly
