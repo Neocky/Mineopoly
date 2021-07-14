@@ -4,6 +4,6 @@
 #
 # @within mineopoly:game/player/round/stage/end_turn
 
-replaceitem entity @s hotbar.6 minecraft:air
-replaceitem entity @s hotbar.7 minecraft:air
-replaceitem entity @s hotbar.8 minecraft:air
+item replace entity @s hotbar.3 with minecraft:air
+item replace entity @s hotbar.4 with minecraft:air
+item replace entity @s hotbar.5 with minecraft:air
