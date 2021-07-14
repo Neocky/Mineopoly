@@ -1,4 +1,4 @@
-#> mineopoly:game/field/property/brown_1
+#> mineopoly:game/field/property/brown_2
 #
 # adjusts buying price for a field
 #
@@ -9,4 +9,4 @@ scoreboard players set #rentPrice priceHandler 60
 # buy function
 
 
-scoreboard players set #brown_1 fieldProperty 2
+scoreboard players set #brown_2 fieldProperty 2
