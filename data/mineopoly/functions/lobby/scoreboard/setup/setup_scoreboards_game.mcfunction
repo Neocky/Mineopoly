@@ -17,7 +17,7 @@ scoreboard objectives remove field
 scoreboard players reset @a stageHandler
 scoreboard players reset #doublesRolled playerHandler
 scoreboard players reset @a prisonRound
-scoreboard objectives remove price
+scoreboard objectives remove priceHandler
 scoreboard objectives remove openChest
 scoreboard objectives remove chestMenu
 scoreboard objectives remove fieldHandler
@@ -64,8 +64,8 @@ scoreboard players add #doublesRolled playerHandler 0
 scoreboard objectives add prisonRound dummy
 
 # create price scoreboard
-scoreboard objectives add price dummy
-scoreboard players set #price price 0
+scoreboard objectives add priceHandler dummy
+scoreboard players set #rentPrice priceHandler 0
 
 # setup scoreboard for chest gui
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
