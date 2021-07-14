@@ -23,4 +23,4 @@ execute as @e[type=armor_stand,tag=field_menu,tag=rotate_slow] at @s run tp @s ~
 execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
 
 # if player ends turn
-execute as @s if score @s endTurn matches 1.. run function mineopoly:game/player/round/stage/end_turn
+execute as @s if score @s endTurn matches 1.. if score @s field = @s currentField run function mineopoly:game/player/round/stage/end_turn
