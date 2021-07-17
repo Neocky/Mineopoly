@@ -4,10 +4,9 @@
 #
 # @within mineopoly:game/field/head_menu/handle_head_menus
 
-# kill start menu
-kill @e[type=minecraft:armor_stand, tag=menu_rent_open]
-tp @e[type=minecraft:creeper, tag=menu_rent_open] ~ ~-900 ~
-kill @e[type=minecraft:creeper, tag=menu_rent_open]
+function mineopoly:game/field/head_menu/kill_head_menu
+
+
 
 # create creeper (which will tp to armor stands)
 #, ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}

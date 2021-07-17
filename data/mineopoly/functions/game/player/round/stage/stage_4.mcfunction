@@ -14,7 +14,7 @@ execute as @s run function mineopoly:game/field/property/get_property_price
 
 function mineopoly:game/field/chest_gui/main_gui
 
-function mineopoly:game/field/head_menu/handle_head_menus
+function mineopoly:game/field/head_menu/handle_head_menu
 
 # rotate armorstands slowly
 execute as @e[type=armor_stand,tag=rotate_slow] at @s run tp @s ~ ~ ~ ~2 ~

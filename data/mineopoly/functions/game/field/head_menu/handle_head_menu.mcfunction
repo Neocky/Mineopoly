@@ -1,4 +1,4 @@
-#> mineopoly:game/field/head_menu/handle_head_menus
+#> mineopoly:game/field/head_menu/handle_head_menu
 #
 # Handles the head menus
 #

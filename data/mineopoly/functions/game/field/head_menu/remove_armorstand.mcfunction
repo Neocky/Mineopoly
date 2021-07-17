@@ -4,9 +4,7 @@
 #
 # @within mineopoly:game/player/round/stage/stage_4
 
-kill @e[type=minecraft:armor_stand, tag=head_menu]
-tp @e[type=minecraft:creeper, tag=head_menu] ~ ~-900 ~
-kill @e[type=minecraft:creeper, tag=head_menu]
+function mineopoly:game/field/head_menu/kill_head_menu
 
 scoreboard players set #fieldMenu fieldHandler 0
 scoreboard players operation #fieldMenu fieldHandler += @s currentField
