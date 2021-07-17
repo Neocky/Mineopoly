@@ -9,4 +9,4 @@ scoreboard players set #buyPrice priceHandler 60
 # buy function
 
 
-scoreboard players set #brown_1 fieldProperty 2
+# scoreboard players set #brown_1 fieldProperty 2

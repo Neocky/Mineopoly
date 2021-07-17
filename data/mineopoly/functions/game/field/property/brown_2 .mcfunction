@@ -4,9 +4,9 @@
 #
 # @within mineopoly:game/field/property/get_property_price
 
-scoreboard players set #rentPrice priceHandler 60
+scoreboard players set #buyPrice priceHandler 60
 
 # buy function
 
 
-scoreboard players set #brown_2 fieldProperty 2
+# scoreboard players set #brown_2 fieldProperty 2
