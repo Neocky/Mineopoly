@@ -2,7 +2,7 @@
 #
 # adjusts players 'field' score and reduces it by 40 when they pass go
 #
-# @within mineopoly:game/player/stage_4
+# @within mineopoly:game/player/stage_3
 
 execute if entity @s[scores={field=1}, tag=!property_brown_1] if score #brown_1 fieldProperty matches 0 run function mineopoly:game/field/property/brown_1
 execute if entity @s[scores={field=1}, tag=!property_brown_1] if score #brown_1 fieldProperty matches 1 run scoreboard players set #rentPrice priceHandler 0

@@ -9,4 +9,3 @@ function mineopoly:game/field/head_menu/kill_head_menu
 scoreboard players set #fieldMenu fieldHandler 0
 scoreboard players operation #fieldMenu fieldHandler += @s currentField
 scoreboard players set #headMenuChoice fieldHandler 0
-execute as @s run function mineopoly:game/field/head_menu/create_armorstand

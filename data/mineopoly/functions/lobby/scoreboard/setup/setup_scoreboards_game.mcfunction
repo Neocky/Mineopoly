@@ -66,6 +66,7 @@ scoreboard objectives add prisonRound dummy
 # create price scoreboard
 scoreboard objectives add priceHandler dummy
 scoreboard players set #rentPrice priceHandler 0
+scoreboard players set #buyPrice priceHandler 0
 
 # setup scoreboard for chest gui
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest

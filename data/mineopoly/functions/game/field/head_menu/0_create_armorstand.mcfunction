@@ -1,4 +1,4 @@
-#> mineopoly:game/field/head_menu/create_armorstand
+#> mineopoly:game/field/head_menu/0_create_armorstand
 #
 # Creates a head on the field of the active player
 #

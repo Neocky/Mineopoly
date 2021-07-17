@@ -9,11 +9,14 @@ execute as @s run function mineopoly:game/scoreboard/set_current_field
 
 execute as @s run function mineopoly:game/field/chest_gui/set_chests
 
+function mineopoly:game/field/chest_gui/main_gui
+
+function mineopoly:game/field/head_menu/handle_head_menu
+
+
 scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
 
 item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
-
-function mineopoly:game/field/chest_gui/main_gui
 
 # rotate armorstands slowly
 execute as @e[type=armor_stand,tag=field_menu,tag=rotate_slow] at @s run tp @s ~ ~ ~ ~2 ~

@@ -1,4 +1,4 @@
-#> mineopoly:game/field/head_menu/create_menu_rent
+#> mineopoly:game/field/head_menu/1_create_menu_rent
 #
 # Creates a head on the field of the active player
 #
