@@ -1,12 +1,12 @@
 #> mineopoly:game/field/head_menu/2_create_menu_buy
 #
-# Creates a head on the field of the active player
+# Creates a head on the field of the active player to buy the property
+# headMenuChoice (fieldHandler) = 2
 #
 # @within mineopoly:game/field/head_menu/handle_head_menus
 
 function mineopoly:game/field/head_menu/kill_head_menu
 
-say @a create menu buy
 
 # create creeper (which will tp to armor stands)
 summon minecraft:creeper 7 64 -7 {NoGravity:1b, NoAI:1b, PersistenceRequired:1b,Silent:1b,DeathLootTable:"minecraft:empty", Tags:["menu_buy","head_menu"], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}

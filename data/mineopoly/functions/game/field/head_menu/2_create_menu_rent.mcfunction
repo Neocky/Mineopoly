@@ -1,12 +1,12 @@
-#> mineopoly:game/field/head_menu/1_create_menu_rent
+#> mineopoly:game/field/head_menu/2_create_menu_rent
 #
-# Creates a head on the field of the active player
+# Creates a head on the field of the active player to pay rent to the owner
+# headMenuChoice (fieldHandler) = 2
 #
 # @within mineopoly:game/field/head_menu/handle_head_menus
 
 function mineopoly:game/field/head_menu/kill_head_menu
 
-say @a create menu rent
 
 # create creeper (which will tp to armor stands)
 summon minecraft:creeper 7 64 -7 {NoGravity:1b, NoAI:1b, PersistenceRequired:1b,Silent:1b,DeathLootTable:"minecraft:empty", Tags:["menu_pay_rent","head_menu"], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}

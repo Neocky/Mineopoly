@@ -19,3 +19,7 @@ scoreboard objectives remove diceThrow
 
 # runs dice_to_field to set new field value for the player
 execute as @s run function mineopoly:game/scoreboard/math/dice_to_field
+
+item replace entity @s hotbar.4 with minecraft:air
+# check if doubles are rolled
+execute if score #dice1 dice = #dice2 dice run function mineopoly:game/dice/doubles_rolled

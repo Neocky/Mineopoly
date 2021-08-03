@@ -10,6 +10,3 @@ scoreboard players add #doublesRolled playerHandler 1
 
 # if 3 doubles in a row go to prison
 execute if score #doublesRolled playerHandler matches 3.. as @s run function mineopoly:game/field/prison/go_to_prison
-
-# roll dice again
-scoreboard players set #activeStage stageHandler 1

@@ -4,6 +4,8 @@
 #
 # @within mineopoly:game/player/handle_turn
 
+# if dice are doubles
+#execute if score #dice1 dice = #dice2 dice run function mineopoly:game/dice/doubles_rolled
 
 execute as @s run function mineopoly:game/scoreboard/set_current_field
 
@@ -14,9 +16,9 @@ function mineopoly:game/field/chest_gui/main_gui
 function mineopoly:game/field/head_menu/handle_head_menu
 
 
-scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
+execute unless score #dice1 dice = #dice2 dice run scoreboard objectives add endTurn minecraft.used:minecraft.carrot_on_a_stick
 
-item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
+execute unless score #dice1 dice = #dice2 dice run item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
 # rotate armorstands slowly
 execute as @e[type=armor_stand,tag=field_menu,tag=rotate_slow] at @s run tp @s ~ ~ ~ ~2 ~
@@ -24,7 +26,15 @@ execute as @e[type=armor_stand,tag=field_menu,tag=rotate_slow] at @s run tp @s ~
 execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
 
 # resets scoreboard of endTurn to 0 if you use the item without being on your field
-execute if score @s endTurn matches 1.. unless score @s field = @s currentField run scoreboard players set @s endTurn 0
+execute unless score #dice1 dice = #dice2 dice if score @s endTurn matches 1.. unless score @s field = @s currentField run scoreboard players set @s endTurn 0
+
 
 # if player ends turn
-execute as @s if score @s endTurn matches 1.. run function mineopoly:game/player/round/stage/end_turn
+execute unless score #dice1 dice = #dice2 dice as @s if score @s endTurn matches 1.. run function mineopoly:game/player/round/stage/end_turn
+
+# if player rolled doubles give dice to roll again
+execute if score #dice1 dice = #dice2 dice run scoreboard objectives add diceThrow minecraft.used:minecraft.carrot_on_a_stick
+execute if score #dice1 dice = #dice2 dice run item replace entity @s[tag=yourTurn] hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.dice_throw","italic":false,"color":"aqua","bold":true}]',Lore:['[{"translate":"mineopoly.game.item.dice_throw.lore","italic":false,"color":"gray"}]']},CustomModelData:1, noDrop:1b}
+execute if score #dice1 dice = #dice2 dice if score @s diceThrow matches 1.. unless score @s field = @s currentField run scoreboard players set @s diceThrow 0
+execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run scoreboard players set #activeStage stageHandler 2
+execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/dice/roll_dice
