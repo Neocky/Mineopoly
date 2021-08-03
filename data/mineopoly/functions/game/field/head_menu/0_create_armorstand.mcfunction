@@ -4,6 +4,9 @@
 #
 # @within mineopoly:game/field/head_menu/remove_armorstand
 
+function mineopoly:game/field/head_menu/kill_head_menu
+say @a was passiert hier
+
 # create creeper (which will tp to armor stands)
 summon minecraft:creeper 7 64 -7 {NoGravity:1b, NoAI:1b, PersistenceRequired:1b,Silent:1b,DeathLootTable:"minecraft:empty", Tags:["menu_rent_open","head_menu"], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}
 

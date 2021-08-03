@@ -6,19 +6,19 @@
 
 function mineopoly:game/field/head_menu/kill_head_menu
 
-
+say @a create menu buy
 
 # create creeper (which will tp to armor stands)
 summon minecraft:creeper 7 64 -7 {NoGravity:1b, NoAI:1b, PersistenceRequired:1b,Silent:1b,DeathLootTable:"minecraft:empty", Tags:["menu_buy","head_menu"], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}
 summon minecraft:creeper 7 64 -7 {NoGravity:1b, NoAI:1b, PersistenceRequired:1b,Silent:1b,DeathLootTable:"minecraft:empty", Tags:["menu_buy_go_back","head_menu"], ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}]}
 
+
 # brown_1 armor stand
-execute if score @s currentField matches 1 positioned -25 63.75 2 run summon armor_stand ~ ~ ~1 {Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[270f],CustomName:'{"translate":"mineopoly.game.menu.pay_rent", "bold": true, "color": "red"}',CustomNameVisible:1b,Tags:["menu_buy","head_menu"],DisabledSlots:4144959}
+execute if score @s currentField matches 1 positioned -25 63.75 2 run summon armor_stand ~ ~ ~1 {Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[270f],CustomName:'{"translate":"mineopoly.game.menu.buy_property", "bold": true, "color": "red"}',CustomNameVisible:1b,Tags:["menu_buy","head_menu"],DisabledSlots:4144959}
 execute if score @s currentField matches 1 positioned -25 63.75 2 run summon armor_stand ~ ~ ~-1 {Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[270f],CustomName:'{"translate":"mineopoly.game.menu.go_back", "bold": true, "color": "gray"}',CustomNameVisible:1b,Tags:["menu_buy_go_back","head_menu"],DisabledSlots:4144959}
 
-execute if score @s currentField matches 1 positioned -25 63.75 2 run item replace entity @e[type=minecraft:armor_stand, tag=menu_buy] armor.head with minecraft:player_head{display:{Name:'[{"translate":"mineopoly.game.menu.pay_rent","italic":false,"bold":true,"color":"red"}]'},SkullOwner:{Id:[I;55185054,-2025500730,-2043050837,-997286030],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0="}]}}}
+execute if score @s currentField matches 1 positioned -25 63.75 2 run item replace entity @e[type=minecraft:armor_stand, tag=menu_buy] armor.head with minecraft:player_head{display:{Name:'[{"translate":"mineopoly.game.menu.buy_property","italic":false,"bold":true,"color":"red"}]'},SkullOwner:{Id:[I;55185054,-2025500730,-2043050837,-997286030],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0="}]}}}
 execute if score @s currentField matches 1 positioned -25 63.75 2 run item replace entity @e[type=minecraft:armor_stand, tag=menu_buy_go_back] armor.head with minecraft:player_head{display:{Name:'[{"translate":"mineopoly.game.menu.go_back","italic":false,"bold":true,"color":"gray"}]'},SkullOwner:{Id:[I;1725013901,-1319550924,-1685700747,-1241102807],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY0Zjc3OWE4ZTNmZmEyMzExNDNmYTY5Yjk2YjE0ZWUzNWMxNmQ2NjllMTljNzVmZDFhN2RhNGJmMzA2YyJ9fX0="}]}}}
-
 
 execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_buy] ~ ~1 ~1
 execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_buy_go_back] ~ ~1 ~-1

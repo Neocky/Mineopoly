@@ -24,3 +24,4 @@ scoreboard players set #activeStage stageHandler 1
 scoreboard players add #activePlayer playerHandler 1
 
 scoreboard players set #buyPrice priceHandler 0
+scoreboard players set #rentPrice priceHandler 0
