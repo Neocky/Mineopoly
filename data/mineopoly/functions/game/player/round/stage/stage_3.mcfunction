@@ -6,4 +6,4 @@
 
 execute as @s run function mineopoly:game/field/property/get_property_price
 
-scoreboard players add #activeStage stageHandler 1
+scoreboard players set #activeStage stageHandler 4

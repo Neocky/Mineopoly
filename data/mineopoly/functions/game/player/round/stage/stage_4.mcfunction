@@ -17,4 +17,4 @@ function mineopoly:game/field/head_menu/handle_head_menu
 
 execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
 
-execute if score #rentPrice priceHandler matches 0 run scoreboard players add #activeStage stageHandler 1
+execute if score #rentPrice priceHandler matches 0 run scoreboard players set #activeStage stageHandler 5

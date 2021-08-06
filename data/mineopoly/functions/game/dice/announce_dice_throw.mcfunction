@@ -4,4 +4,4 @@
 #
 # @within mineopoly:game/dice/roll_dice
 
-tellraw @s ["",{"selector":"@e[type=player,tag=diceThrower]"},{"text":" "},{"translate":"mineopoly.dice.threw","color":"green"},{"text":" "},{"score":{"name":"#diceFull","objective":"dice"},"color":"light_purple"}]
+tellraw @s ["",{"selector":"@e[type=minecraft:player,tag=yourTurn]"},{"text":" "},{"translate":"mineopoly.dice.threw","color":"green"},{"text":" "},{"score":{"name":"#diceFull","objective":"dice"},"color":"light_purple"}]
