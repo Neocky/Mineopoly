@@ -1,3 +1,4 @@
+#> mineopoly:tick
 # tick function which is called every tick
 #
 # All functions which get executed each tick
