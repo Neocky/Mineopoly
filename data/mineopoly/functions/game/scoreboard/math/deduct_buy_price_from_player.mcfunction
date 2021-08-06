@@ -10,7 +10,5 @@ execute if score @s money < #buyPrice priceHandler run function mineopoly:game/f
 
 # if enough money: deduct money and give property to player
 execute if score @s money >= #buyPrice priceHandler as @s run function mineopoly:game/scoreboard/math/give_property_to_player
-execute if score @s money >= #buyPrice priceHandler run scoreboard players operation @s money -= #buyPrice priceHandler
 
-scoreboard players set #buyPrice priceHandler 0
-function mineopoly:game/field/head_menu/0_create_armorstand
+
