@@ -14,11 +14,11 @@ execute if score #activeStage stageHandler matches 4 if score #headMenuChoice fi
 execute if score #activeStage stageHandler matches 5 if score #headMenuChoice fieldHandler matches 2 if score #rentPrice priceHandler matches 0 unless score #buyPrice priceHandler matches 0 run function mineopoly:game/field/head_menu/2_create_menu_buy
 
 # Menu: pay rent
-execute if score #activeStage stageHandler matches 4 if entity @e[type=minecraft:creeper, tag=menu_pay_rent, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 run function mineopoly:game/scoreboard/math/deduct_rent_from_player
+execute if score #activeStage stageHandler matches 4 if entity @e[type=minecraft:creeper, tag=menu_pay_rent, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 as @s run function mineopoly:game/scoreboard/math/deduct_rent_from_player
 execute if score #activeStage stageHandler matches 4 if entity @e[type=minecraft:creeper, tag=menu_rent_go_back, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 run scoreboard players set #headMenuChoice fieldHandler 0
 
 # Menu: buy property
-execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_buy, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 run function mineopoly:game/scoreboard/math/deduct_buy_price_from_player
+execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_buy, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 as @s run function mineopoly:game/scoreboard/math/deduct_buy_price_from_player
 execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_buy_go_back, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 run scoreboard players set #headMenuChoice fieldHandler 0
 
 # rotate armorstands slowly
