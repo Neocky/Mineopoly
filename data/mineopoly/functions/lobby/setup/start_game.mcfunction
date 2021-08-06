@@ -34,10 +34,6 @@ function mineopoly:game/mobs/create_prison_trader
 function mineopoly:lobby/bossbar/create_bossbar
 bossbar set mineopoly:activeplayerbossbar players @a
 
-# give permanent effects
-execute as @a run function mineopoly:game/player/give_effects
-
 # sets dice to 0
 scoreboard players set #dice1 dice 0
 scoreboard players set #dice2 dice 0
-
