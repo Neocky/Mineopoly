@@ -3,7 +3,6 @@
 # Annouce the value of the dice throw
 #
 # @within mineopoly:game/player/round/stage/stage_1
-
 function mineopoly:game/scoreboard/math/reset_dice
 
 execute store result score #dice1 dice run loot spawn ~ ~ ~ loot mineopoly:rng

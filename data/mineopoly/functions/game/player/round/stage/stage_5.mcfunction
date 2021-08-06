@@ -37,4 +37,6 @@ execute if score #dice1 dice = #dice2 dice run scoreboard objectives add diceThr
 execute if score #dice1 dice = #dice2 dice run item replace entity @s[tag=yourTurn] hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.dice_throw","italic":false,"color":"aqua","bold":true}]',Lore:['[{"translate":"mineopoly.game.item.dice_throw.lore","italic":false,"color":"gray"}]']},CustomModelData:1, noDrop:1b}
 execute if score #dice1 dice = #dice2 dice if score @s diceThrow matches 1.. unless score @s field = @s currentField run scoreboard players set @s diceThrow 0
 execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run scoreboard players set #activeStage stageHandler 2
+execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/field/chest_gui/remove_chests
 execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/dice/roll_dice
+
