@@ -20,10 +20,9 @@ execute unless score #dice1 dice = #dice2 dice run scoreboard objectives add end
 
 execute unless score #dice1 dice = #dice2 dice run item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
-# rotate armorstands slowly
-execute as @e[type=armor_stand,tag=field_menu,tag=rotate_slow] at @s run tp @s ~ ~ ~ ~2 ~
 
 execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
+execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/check_property_owner
 
 # resets scoreboard of endTurn to 0 if you use the item without being on your field
 execute unless score #dice1 dice = #dice2 dice if score @s endTurn matches 1.. unless score @s field = @s currentField run scoreboard players set @s endTurn 0

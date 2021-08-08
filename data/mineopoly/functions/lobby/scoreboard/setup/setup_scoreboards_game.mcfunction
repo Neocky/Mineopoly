@@ -76,3 +76,6 @@ scoreboard players set @a chestMenu 0
 # Used for head_menu for example
 scoreboard objectives add fieldHandler dummy
 scoreboard players set #fieldMenu fieldHandler 0
+
+# setup scoreboard for current field owner
+scoreboard players set #currentFieldOwner fieldHandler 0
