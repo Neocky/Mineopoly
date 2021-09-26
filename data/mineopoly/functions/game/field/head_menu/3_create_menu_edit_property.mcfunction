@@ -28,10 +28,10 @@ execute if score @s currentField matches 1 positioned -25 63.75 2 run item repla
 
 
 
-execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_pay_rent] ~ ~1 ~1.5
-execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_rent_go_back] ~ ~1 ~0.5
-execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_pay_rent] ~ ~1 ~-0.5
-execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_rent_go_back] ~ ~1 ~-1.5
+execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_edit_property_buy] ~ ~1 ~1.5
+execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=mmenu_edit_property_sell] ~ ~1 ~0.5
+execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_edit_property_mortgage] ~ ~1 ~-0.5
+execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type=minecraft:creeper, tag=menu_edit_property_back] ~ ~1 ~-1.5
 # brown_2
 #execute if score @s currentField matches 3 positioned -25 63.75 36 run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[270f],CustomName:'{"translate":"mineopoly.streetname.brown_2", "bold": true, "color": "#825432"}',CustomNameVisible:1b,Tags:["field_menu","rotate_slow"],DisabledSlots:4144959}
 #execute if score @s currentField matches 3 if entity @a[tag=property_brown_2] as @a[tag=property_brown_2] positioned -25 63.75 36 run loot replace entity @e[type=minecraft:armor_stand, tag=field_menu, tag=rotate_slow] armor.head loot mineopoly:get_head
