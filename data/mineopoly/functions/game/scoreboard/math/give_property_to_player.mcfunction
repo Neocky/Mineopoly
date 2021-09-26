@@ -1,17 +1,17 @@
 #> mineopoly:game/scoreboard/math/give_property_to_player
 #
-# Pays money to the bank to obtain property
+# Pays money to the bank to obtain property and sets correct value to fieldProperty
 #
 # @within mineopoly:game/scoreboard/math/deduct_rent_from_player
 
+# brown 1
+execute if score @s field matches 1 run tag @s add property_brown_1
+execute if score @s field matches 1 run scoreboard players set #brown_1 fieldProperty 2
 
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
-execute if score @s field matches 1 run tag @s add property_brown_1
+# brown 2
+execute if score @s field matches 3 run tag @s add property_brown_2
+execute if score @s field matches 3 run scoreboard players set #brown_2 fieldProperty 2
+
 
 scoreboard players operation @s money -= #buyPrice priceHandler
 

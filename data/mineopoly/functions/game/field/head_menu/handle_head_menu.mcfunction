@@ -23,6 +23,7 @@ execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft
 execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_buy_go_back, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 3 run scoreboard players set #headMenuChoice fieldHandler 0
 
 # Menu: edit property
+execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_edit_property_buy, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 4 as @e[type=minecraft:player, tag=yourTurn, limit=1] run function 
 execute if score #activeStage stageHandler matches 5 if entity @e[type=minecraft:creeper, tag=menu_edit_property_back, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 4 run scoreboard players set #headMenuChoice fieldHandler 0
 
 
