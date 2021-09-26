@@ -16,6 +16,6 @@ execute if score #tempPropertyScore fieldProperty matches 7.. run tellraw @s {"t
 execute if score #tempPropertyScore fieldProperty matches 7.. run function mineopoly:game/field/head_menu/3_create_menu_edit_property
 
 # if enough money: deduct money and give house to player
-execute if score #tempPropertyScore fieldProperty matches 2.. unless score #tempPropertyScore fieldProperty matches 7.. if score @s money >= #buyHousePrice priceHandler as @s run function mineopoly:game/scoreboard/math/build_house_on_field
+execute if score #tempPropertyScore fieldProperty matches 2..6 if score @s money >= #buyHousePrice priceHandler as @s run function mineopoly:game/field/property/build_house_on_field
 
 
