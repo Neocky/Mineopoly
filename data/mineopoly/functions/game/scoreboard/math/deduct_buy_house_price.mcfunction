@@ -10,8 +10,8 @@ function mineopoly:game/field/property/get_fieldproperty_score
 # if not enough money: create menu edit property again and say error
 execute if score @s money < #buyHousePrice priceHandler run tellraw @s {"text":"Not enough money. Please translate me!"}
 execute if score @s money < #buyHousePrice priceHandler run function mineopoly:game/field/head_menu/3_create_menu_edit_property
-execute if score #tempPropertyScore fieldProperty matches ..2 run tellraw @s {"text":"You do not own every property of this color. Pls Translate me"}
-execute if score #tempPropertyScore fieldProperty matches ..2 run function mineopoly:game/field/head_menu/3_create_menu_edit_property
+execute if score #tempPropertyScore fieldProperty matches ..1 run tellraw @s {"text":"You do not own every property of this color. Pls Translate me"}
+execute if score #tempPropertyScore fieldProperty matches ..1 run function mineopoly:game/field/head_menu/3_create_menu_edit_property
 execute if score #tempPropertyScore fieldProperty matches 7.. run tellraw @s {"text":"You already own a hotel. Cannot build more. Please translate me btw"}
 execute if score #tempPropertyScore fieldProperty matches 7.. run function mineopoly:game/field/head_menu/3_create_menu_edit_property
 
