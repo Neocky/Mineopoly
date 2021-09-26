@@ -37,4 +37,4 @@ execute if entity @s[scores={field=3}, tag=!property_brown_2] if score #brown_2 
 execute if entity @s[scores={field=3}, tag=!property_brown_2] if score #brown_2 fieldProperty matches 6 run scoreboard players set #rentPrice priceHandler 320
 execute if entity @s[scores={field=3}, tag=!property_brown_2] if score #brown_2 fieldProperty matches 7 run scoreboard players set #rentPrice priceHandler 450
 
-#brown 3
+#
