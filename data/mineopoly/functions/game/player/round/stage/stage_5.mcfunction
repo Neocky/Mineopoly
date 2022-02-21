@@ -4,8 +4,6 @@
 #
 # @within mineopoly:game/player/handle_turn
 
-# if dice are doubles
-#execute if score #dice1 dice = #dice2 dice run function mineopoly:game/dice/doubles_rolled
 
 execute as @s run function mineopoly:game/scoreboard/set_current_field
 
@@ -21,7 +19,7 @@ execute unless score #dice1 dice = #dice2 dice run scoreboard objectives add end
 execute unless score #dice1 dice = #dice2 dice run item replace entity @s hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"translate":"mineopoly.game.item.end_turn","italic":false,"bold":true,"color":"red"}]',Lore:['[{"translate":"mineopoly.game.item.end_turn.lore","italic":false,"color":"gray"}]']},noDrop:1b}
 
 
-execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
+execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/reset_armorstand
 execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/check_property_owner
 
 # resets scoreboard of endTurn to 0 if you use the item without being on your field

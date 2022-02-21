@@ -15,6 +15,6 @@ function mineopoly:game/field/chest_gui/main_gui
 function mineopoly:game/field/head_menu/handle_head_menu
 
 
-execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/remove_armorstand
+execute unless score #fieldMenu fieldHandler = @s currentField as @s run function mineopoly:game/field/head_menu/reset_armorstand
 
 execute if score #rentPrice priceHandler matches 0 run scoreboard players set #activeStage stageHandler 5

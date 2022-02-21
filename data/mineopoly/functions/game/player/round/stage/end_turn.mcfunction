@@ -2,7 +2,7 @@
 #
 # Handles the end of the players turn
 #
-# @within mineopoly:game/player/round/stage/stage_4
+# @within mineopoly:game/player/round/stage/stage_5
 
 say @a "End turn"
 
@@ -14,6 +14,8 @@ tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove loaded
 tag @e[type=minecraft:player, tag=yourTurn, limit=1] remove yourTurn
 
 function mineopoly:game/field/chest_gui/remove_chests
+
+function mineopoly:game/field/head_menu/kill_head_menu
 
 function mineopoly:lobby/scoreboard/math/reset_dice
 scoreboard objectives remove diceThrow

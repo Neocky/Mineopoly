@@ -3,7 +3,7 @@
 # Creates a head on the field of the active player
 # headMenuChoice (fieldHandler) = 0
 #
-# @within mineopoly:game/field/head_menu/remove_armorstand
+# @within mineopoly:game/field/head_menu/reset_armorstand
 
 function mineopoly:game/field/head_menu/kill_head_menu
 
