@@ -8,7 +8,7 @@
 execute if score #headMenuChoice fieldHandler matches 0 run function mineopoly:game/field/head_menu/0_create_armorstand
 
 
-execute if score #activeStage stageHandler matches 4..5 if entity @e[type=minecraft:creeper, tag=menu_rent_open, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 1 run scoreboard players set #headMenuChoice fieldHandler 2
+execute if score #activeStage stageHandler matches 4..5 if entity @e[type=minecraft:creeper, tag=menu_head_open, nbt=!{Health:20.0f}] if score #headMenuChoice fieldHandler matches 1 run scoreboard players set #headMenuChoice fieldHandler 2
 
 execute if score #activeStage stageHandler matches 4 if score #headMenuChoice fieldHandler matches 2 unless score #rentPrice priceHandler matches 0 run function mineopoly:game/field/head_menu/2_create_menu_rent
 execute if score #activeStage stageHandler matches 5 if score #headMenuChoice fieldHandler matches 2 unless score #buyPrice priceHandler matches 0 run function mineopoly:game/field/head_menu/2_create_menu_buy
