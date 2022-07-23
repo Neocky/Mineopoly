@@ -36,7 +36,7 @@ execute if score @s currentField matches 1 positioned -25 63.75 2 run tp @e[type
 #execute if score @s currentField matches 3 unless entity @a[tag=property_brown_2] positioned -25 63.75 36 run item replace entity @e[type=minecraft:armor_stand, tag=field_menu, tag=rotate_slow] armor.head with minecraft:player_head{display:{Name:'[{"translate":"mineopoly.streetname.brown_2","italic":false,"bold":true,"color":"#825432"}]'},SkullOwner:{Id:[I;-2094138747,2019312395,-1956271567,-1111646946],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I2NDhiOWE0NGUyODBiY2RmMjVmNGE2NmE5N2JkNWMzMzU0MmU1ZTgyNDE1ZTE1YjQ3NWM2Yjk5OWI4ZDYzNSJ9fX0="}]}}}
 
 
-
+# We set an oak sign, which saves scoreboards, that gets transferred to the armor stand, so that we see how much we have to pay (for a house)
 setblock 0 0 0 oak_sign{Text1:'["",{"translate":"mineopoly.game.menu.edit_buy","bold":true,"color":"green"},{"text":" -","color":"red"},{"score":{"name":"#buyHousePrice","objective":"priceHandler"},"color":"red"},{"text":"$","color":"red"}]'}
 data modify entity @e[type=minecraft:armor_stand, tag=menu_edit_property_buy,limit=1] CustomName set from block 0 0 0 Text1
 setblock 0 0 0 minecraft:air
