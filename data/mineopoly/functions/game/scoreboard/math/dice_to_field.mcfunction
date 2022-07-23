@@ -1,4 +1,4 @@
-#> mineopoly:lobby/scoreboard/math/dice_to_field
+#> mineopoly:game/scoreboard/math/dice_to_field
 #
 # adds the dice result to the players' scoreboard 'field'
 #
