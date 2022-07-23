@@ -4,4 +4,4 @@
 #
 # currently not in use
 
-scoreboard players operation #playerNumbers playerHandler -= #one numbers
+scoreboard players remove #playerNumbers playerHandler 1

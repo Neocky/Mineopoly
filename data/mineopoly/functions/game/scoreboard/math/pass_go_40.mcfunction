@@ -4,4 +4,4 @@
 #
 # @within mineopoly:game/player/pass_go
 
-scoreboard players remove @p field 40
+scoreboard players remove @s field 40

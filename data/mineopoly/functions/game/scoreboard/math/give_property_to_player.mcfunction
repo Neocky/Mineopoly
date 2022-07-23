@@ -16,4 +16,6 @@ execute if score @s field matches 3 run scoreboard players set #brown_2 fieldPro
 scoreboard players operation @s money -= #buyPrice priceHandler
 
 scoreboard players set #buyPrice priceHandler 0
+
+function mineopoly:game/field/check_property_owner
 function mineopoly:game/field/head_menu/0_create_armorstand

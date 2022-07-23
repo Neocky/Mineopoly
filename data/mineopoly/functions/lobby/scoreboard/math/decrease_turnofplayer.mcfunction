@@ -6,5 +6,5 @@
 
 scoreboard players set #temp turnOfPlayer 0
 scoreboard players operation #temp turnOfPlayer = @s turnOfPlayer
-execute as @a if score @s turnOfPlayer > #temp turnOfPlayer run scoreboard players operation @s turnOfPlayer -= #one numbers
+execute as @a if score @s turnOfPlayer > #temp turnOfPlayer run scoreboard players remove @s turnOfPlayer 1
 scoreboard players reset #temp turnOfPlayer

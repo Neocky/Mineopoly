@@ -4,4 +4,4 @@
 #
 # @within mineopoly:lobby/teams/team_unready
 
-scoreboard players operation #playersReady playerHandler -= #one numbers
+scoreboard players remove #playersReady playerHandler 1

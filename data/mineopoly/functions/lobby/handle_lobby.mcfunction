@@ -14,6 +14,6 @@ function mineopoly:lobby/player/give_effects
 execute positioned 1 72 -498 if entity @p[distance=..0.5] as @p[distance=..0.5] run function mineopoly:lobby/output/parkour_finish
 
 # starts the game if every player is ready
-execute if score #activeGame playerHandler < #one numbers if score #playerNumbers playerHandler matches 2..8 if score #playerNumbers playerHandler = #playersReady playerHandler run function mineopoly:lobby/setup/start_game
+execute if score #activeGame playerHandler matches ..0 if score #playerNumbers playerHandler matches 2..8 if score #playerNumbers playerHandler = #playersReady playerHandler run function mineopoly:lobby/setup/start_game
 
 function mineopoly:lobby/teams/handle_cubes

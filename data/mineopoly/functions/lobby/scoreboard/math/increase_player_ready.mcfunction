@@ -4,4 +4,4 @@
 #
 # @within mineopoly:lobby/teams/team_ready
 
-scoreboard players operation #playersReady playerHandler += #one numbers
+scoreboard players add #playersReady playerHandler 1

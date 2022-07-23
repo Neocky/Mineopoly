@@ -1,6 +1,6 @@
 #> mineopoly:game/field/property/get_property_price
 #
-# Get the propert price for the rent or the buy price for each field
+# Get the property price for the rent or the buy price for each field
 #
 # @within mineopoly:game/player/stage_3
 

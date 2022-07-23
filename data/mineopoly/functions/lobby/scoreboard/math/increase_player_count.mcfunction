@@ -4,4 +4,4 @@
 #
 # @within mineopoly:lobby/settings/add_team_unified_color
 
-scoreboard players operation #playerNumbers playerHandler += #one numbers
+scoreboard players add #playerNumbers playerHandler 1

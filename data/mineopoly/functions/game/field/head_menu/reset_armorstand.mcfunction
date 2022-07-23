@@ -8,5 +8,6 @@
 function mineopoly:game/field/head_menu/kill_head_menu
 
 scoreboard players set #fieldMenu fieldHandler 0
+# #fieldMenu is set to current field the player is standing on so it will edit only this field and act like an index to not have 40 if else in every function
 scoreboard players operation #fieldMenu fieldHandler += @s currentField
 scoreboard players set #headMenuChoice fieldHandler 0
