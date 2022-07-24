@@ -35,5 +35,6 @@ execute if score #dice1 dice = #dice2 dice run item replace entity @s[tag=yourTu
 execute if score #dice1 dice = #dice2 dice if score @s diceThrow matches 1.. unless score @s field = @s currentField run scoreboard players set @s diceThrow 0
 execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run scoreboard players set #activeStage stageHandler 2
 execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/field/chest_gui/remove_chests
+execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/field/head_menu/kill_head_menu
 execute if score #dice1 dice = #dice2 dice as @s if score @s diceThrow matches 1.. run function mineopoly:game/dice/roll_dice
 
